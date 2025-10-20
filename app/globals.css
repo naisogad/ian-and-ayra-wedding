@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin 'tailwindcss-motion';
+@plugin 'tailwindcss-intersect';
 
 :root {
   --background: #ffffff;
@@ -6,21 +8,63 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-stain: #ebe4bb;
+  --color-moss: #527d39;
+  --color-shadow: #EBE4BB;
+  --color-gold: #FFD700;
+  --color-goldenrod: #E5B800;
+  --color-darkseagreen: #9DC183;
+  --color-olive: #7F8000;
+  --color-beige1: #F5F5DC;
+  --color-tan: #D2B48C;
+  --color-saddlebrown: #8B4513;
+  --font-greatVibesR: Great Vibes Regular, "san-serif";
+  --font-earlyWinter: Early Winter, "san-serif";
+  --font-whisperingSignature: Whispering Signature, "san-serif";
+  --font-elegantWedding: Elegant Wedding, "san-serif";
+  --font-geotica: Geotica Three Regular, "san-serif";
+  --font-georgia: Georgia, 'Times New Roman', Times, serif;
+  --font-lobster: Lobster, 'san-serif';
+  --font-calligraphyBrilliant: Calligraphy Brilliant, 'san-serif';
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: Great Vibes Regular;
+  src: url('./fonts/GreatVibes-Regular.ttf');
+}
+
+@font-face {
+  font-family: Early Winter;
+  src: url('./fonts/EarlyWinterDemoRegular.ttf');
+}
+
+@font-face {
+  font-family: Whispering Signature;
+  src: url('./fonts/WhisperingSignature.ttf');
+}
+
+@font-face {
+  font-family: Elegant Wedding;
+  src: url('./fonts/ElegantWeddingDemoRegular.ttf');
+}
+
+@font-face {
+  font-family: Geotica Three Regular;
+  src: url('./fonts/GeoticaThree-Regular.woff2');
+}
+
+@font-face {
+  font-family: Calligraphy Brilliant;
+  src: url('./fonts/Calligraphy Brilliant.ttf');
 }
