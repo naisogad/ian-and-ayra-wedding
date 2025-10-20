@@ -19,7 +19,7 @@ import Theme from "./components/Theme";
 import Gallery from "./components/Gallery";
 import RSVP from "./components/RSVP";
 import FAQs from "./components/FAQs";
-
+import GiftM from "./components/GiftM";
 
 export default function Home() {
 
@@ -81,6 +81,7 @@ export default function Home() {
       <ThemeM />
       <GalleryM />
       <RSVPM />
+      <GiftM />
       <FAQsM />
     </div>
     </ObserverProvider>

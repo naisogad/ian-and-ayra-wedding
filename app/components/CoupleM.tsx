@@ -24,30 +24,39 @@ const CoupleM = () => {
             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pl-[15px] pr-[5px] box-border block'>
               <div className='flex flex-wrap box-border'>
                 {/* IMAGE 1 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pl-[15px] pr-[5px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
+                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                   <Image 
                     src={'/pictures/photo-3.jpg'}
                     alt=''
                     fill
-                    className='object-cover object-[45%_0%]'
+                    className='object-contain'
                   />
                 </div>
                 {/* IMAGE 2 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pl-[15px] pr-[5px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
+                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
                   <Image 
                     src={'/pictures/photo-4.jpg'}
                     alt=''
                     fill
-                    className='object-none object-[35%_100%]'
+                    className='object-contain'
                   />
                 </div>
                 {/* IMAGE 3 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pl-[15px] pr-[5px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-2000'>
+                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-2000'>
                   <Image 
                     src={'/pictures/photo-5.jpg'}
                     alt=''
                     fill
-                    className='object-cover object-[53%_0%]'
+                    className='object-contain'
+                  />
+                </div>
+                {/* IMAGE 4 */}
+                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-2000'>
+                  <Image 
+                    src={'/pictures/photo-6.jpg'}
+                    alt=''
+                    fill
+                    className='object-contain'
                   />
                 </div>
               </div>

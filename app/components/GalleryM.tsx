@@ -18,7 +18,7 @@ const PhotosM = () => {
           // Start timer when visible
           setTimeout(() => {
             setShowIndicator(false);
-          }, 15000); // 7 seconds
+          }, 20000); // 20 seconds
         }
       },
       { threshold: 0.5 } // triggers when 50% visible
@@ -58,9 +58,9 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[7.7rem] h-[10rem] top-[55%] left-[6%] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11rem] h-[12rem] top-[55%] left-[6%] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
                   <Image 
-                      src={'/pictures/tapme.png'}
+                      src={'/pictures/slideme.png'}
                       alt=''
                       ref={imgRef}
                       fill
@@ -69,9 +69,9 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[7.7rem] h-[10rem] top-[90%] left-[6%] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11rem] h-[12rem] top-[90%] left-[6%] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
                   <Image 
-                      src={'/pictures/tapme.png'}
+                      src={'/pictures/slideme.png'}
                       alt=''
                       ref={imgRef}
                       fill
@@ -137,7 +137,7 @@ const PhotosM = () => {
               {/* DETAIL */}
               <div className='box-border block text-left pl-[15px] pr-[15px] mt-6 mb-6 intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
                 <p className='text-moss text-[1.125rem]'>Date: March 22, 2025<br /><br />
-                  <a className='font-bold'>“A Love Written by Grace”</a><br /><br />Every chapter of our story has been guided by God’s hand — just as Ruth found favor in the fields of Boaz, we found grace in each other’s hearts. This proposal is more than a milestone; it’s a testament to patience, prayer, and divine orchestration. Through this video and the moments captured in every frame, we celebrate not only our love, but the faithfulness of the One who brought us together in His perfect time.
+                  <a className='font-bold'>💍 “A Love Written by Grace”</a><br /><br />Every chapter of our story has been guided by God’s hand — just as Ruth found favor in the fields of Boaz, we found grace in each other’s hearts. This proposal is more than a milestone; it’s a testament to patience, prayer, and divine orchestration. Through this video and the moments captured in every frame, we celebrate not only our love, but the faithfulness of the One who brought us together in His perfect time.
                   </p>
               </div>
               {/* YOUTUBE VIDEO */}
@@ -175,7 +175,7 @@ const PhotosM = () => {
               {/* DETAIL */}
               <div className='box-border block text-left pl-[15px] pr-[15px] mt-6 mb-6 intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
                 <p className='text-moss text-[1.125rem]'>Date: October 10, 2025<br /><br />
-                  <a className='font-bold'>“Grace in Every Frame”</a><br /><br />Our prenup isn’t just a photoshoot — it’s a reflection of grace. Inspired by the story of Ruth and Boaz, we wanted to capture love that’s pure, intentional, and grounded in faith. Behind every smile is gratitude for the waiting season, and behind every embrace is the joy of finding home in each other. This is our glimpse of forever — a celebration of love authored by God Himself.
+                  <a className='font-bold'>🌸 “Grace in Every Frame”</a><br /><br />Our prenup isn’t just a photoshoot — it’s a reflection of grace. Inspired by the story of Ruth and Boaz, we wanted to capture love that’s pure, intentional, and grounded in faith. Behind every smile is gratitude for the waiting season, and behind every embrace is the joy of finding home in each other. This is our glimpse of forever — a celebration of love authored by God Himself.
                 </p>
               </div>
               <div className='flex box-border overflow-x-auto'>

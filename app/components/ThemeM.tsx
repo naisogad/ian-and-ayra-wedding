@@ -24,7 +24,7 @@ const ThemeM = () => {
                     <div className='mr-0 ml-0 flex flex-wrap box-border'>
                         <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pl-[15px] pr-[15px] box-border block'>
                             {/* TITLE */}
-                            <div className='box-border block pl-[15px] pr-[15px] intersect-once intersect:motion-preset-slide-left motion-duration-1300'>
+                            <div className='box-border block pl-[15px] pr-[15px] pt-8 intersect-once intersect:motion-preset-slide-left motion-duration-1300'>
                                 <h3 className='text-moss text-[2rem] leading-[1] text-center'>Dress Code</h3>
                             </div>
                             {/* IMAGE */}
