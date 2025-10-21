@@ -142,7 +142,7 @@ const PhotosM = () => {
               </div>
               {/* YOUTUBE VIDEO */}
               <div className='justify-end flex flex-wrap box-border p-2'>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TKMN3xWSTN4?si=aeM23f9XUqhrChR8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
+                <iframe width="100%" height="210px" src="https://www.youtube.com/embed/TKMN3xWSTN4?si=aeM23f9XUqhrChR8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
               </div>
               <div className='flex box-border overflow-x-auto'>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/engagement/e1.jpg'} height={500} width={300}/></div>
