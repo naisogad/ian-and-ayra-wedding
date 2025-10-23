@@ -14,7 +14,7 @@ const About = () => {
                 </div>
                 {/* MESSAGE */}
                 <div className='grow-0 shrink-0 basis-[66.66%] max-w-[66.66%] relative w-full min-h-[1px] p-4 box-border block bg-amber-50'>
-                    <p className='text-moss text-[1.125rem] leading-[1.7] mt-0 mb-[1rem] intersect-once intersect:motion-preset-slide-left motion-duration-1000'>Hello everyone! <br /> <br />Get ready to celebrate! We are beyond excited to be getting married and couldn't be happier to share this journey with all of you, our favorite people. Your presence in our lives is a gift, and we can't wait to have you there as we start this new chapter. <br /> <br />This site is your go-to spot for everything about our wedding. We've included all the details and other helpful information to make your planning easy. <br /> <br />We are so grateful for your love and support and are incredibly excited to celebrate with you! See you on the big day!</p>
+                    <p className='text-moss text-[1.125rem] leading-[1.7] mt-0 mb-[1rem] intersect-once intersect:motion-preset-slide-left motion-duration-1000'>Hello everyone! <br /> <br />We’re so excited to be getting married and to share this special journey with our favorite people—you! Your presence means the world to us.<br /> <br />This site has all the wedding details and helpful info you’ll need.<br /> <br />Thank you for your love and support—we can’t wait to celebrate with you on our big day! 💍✨</p>
                     <p className='text-moss text-[1.125rem] leading-[1.7] mt-0 font-semibold intersect-once intersect:motion-preset-slide-left motion-duration-1200'>- Ayra & Ian</p>
                 </div>
             </div>

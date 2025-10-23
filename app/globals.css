@@ -68,3 +68,61 @@ p {
   font-family: Calligraphy Brilliant;
   src: url('./fonts/Calligraphy Brilliant.ttf');
 }
+
+@keyframes pulse-breathe {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0px rgba(82, 125, 57, 0.4); /* moss glow */
+    background-color: #ebe4bb; /* stain */
+  }
+  25% {
+    transform: scale(1.015);
+    box-shadow: 0 0 10px rgba(229, 184, 0, 0.45); /* goldenrod */
+    background-color: #f5f5dc; /* beige */
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px rgba(82, 125, 57, 0.7); /* moss glow stronger */
+    background-color: #ebe4bb; /* stain */
+  }
+  75% {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(229, 184, 0, 0.45); /* goldenrod */
+    background-color: #f5f5dc; /* beige */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0px rgba(82, 125, 57, 0.4);
+    background-color: #ebe4bb;
+  }
+}
+
+.animate-pulse-breathe {
+  animation: pulse-breathe 4s ease-in-out infinite;
+}
+
+/* 🌸 Soft fade-in for first activation */
+@keyframes fade-in-soft {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-soft {
+  animation: fade-in-soft 0.6s ease-out forwards;
+}
+
+/* ✨ Hover/Tap glow — subtle, warm golden highlight */
+.button-hover-glow:hover,
+.button-hover-glow:active {
+  transform: scale(1.05);
+  background-color: #527d39; /* moss */
+  color: #fff8dc; /* light cream text */
+  box-shadow: 0 0 18px rgba(229, 184, 0, 0.55); /* golden glow */
+  transition: all 0.3s ease-in-out;
+}

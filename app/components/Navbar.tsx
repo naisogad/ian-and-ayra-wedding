@@ -36,7 +36,7 @@ const Navbar = () => {
           <ul className={`${toggleMenu? 'mr-25': '-mr-90 '} hidden md:flex flex-col font-georgia relative gap-6 w-80 max-h-[60%] mt-20 pb-100 pt-10 pl-10 float-right bg-stain transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)]`}>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#top">Home</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#couple">The Couple</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abays">Abays</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abays">Entourage</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#schedule">Schedule</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#theme">Theme</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#gallery">Our Story</a></li>
@@ -49,7 +49,7 @@ const Navbar = () => {
           <ul className={`${toggleMenu? '': '-ml-225'} z-2 md:hidden flex flex-col font-georgia fixed gap-6 w-200 h-[100%] mt-15 pb-10 pt-10 pl-5 float-left bg-stain transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)]`}>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#top">Home</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#coupleM">The Couple</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abaysM">Abays</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abaysM">Entourage</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#scheduleM">Schedule</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#themeM">Theme</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#galleryM">Our Story</a></li>

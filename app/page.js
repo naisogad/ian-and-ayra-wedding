@@ -20,40 +20,42 @@ import Gallery from "./components/Gallery";
 import RSVP from "./components/RSVP";
 import FAQs from "./components/FAQs";
 import GiftM from "./components/GiftM";
+import React, { useState, useEffect } from 'react'
+import { BarLoader } from "react-spinners";
 
 export default function Home() {
 
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // if (loading) {
-  //   return (
-  //     <div style={{
-  //       display: 'flex',
-  //       justifyContent: 'center',
-  //       alignItems: 'center',
-  //       height: '100vh',
-  //       fontSize: '1.2rem',
-  //       flexDirection: 'column',
-  //       gap: '4px'
-  //     }}
-  //     >
-  //       <p className="text-moss gap-1">Loading...</p>
-  //       <BarLoader 
-  //         color="#527d39" 
-  //         height={3} 
-  //         width={200}
-  //       />
-  //     </div>
-  //   );
-  // }
+  if (loading) {
+    return (
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        fontSize: '1.2rem',
+        flexDirection: 'column',
+        gap: '4px'
+      }}
+      >
+        <p className="text-moss gap-1">Loading...</p>
+        <BarLoader 
+          color="#527d39" 
+          height={3} 
+          width={100}
+        />
+      </div>
+    );
+  }
 
   return (
     <>

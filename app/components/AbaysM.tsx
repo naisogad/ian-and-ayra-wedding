@@ -30,6 +30,13 @@ const AbaysM = () => {
             
         };
 
+        const scrollToTop = () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // For smooth scrolling animation
+            });
+        };
+
   return (
     <section id='abaysM' className='flex min-h-[600px] pt-[12rem] pr-[0.5rem] pb-[4rem] relative justify-center flex-wrap box-border lg:hidden md:hidden'>
         {/* FLOWER 1 */}
@@ -54,37 +61,37 @@ const AbaysM = () => {
                         <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pl-[15px] pr-[15px] box-border block'>
                             {/* LIST */}
                             <div className='box-border block text-right intersect-once intersect:motion-preset-slide-left motion-duration-1200'>
-                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('ps'); handleItem('s1')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline'>
+                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('ps'); handleItem('s1'); scrollToTop}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline' href='#top1'>
                                     Primary Sponsors
                                     <p className='text-moss text-[1.125rem] leading-[1.7] break-normal overflow-hidden relative z-2 mt-0 mb-[2.5rem] block font-medium'>+ View Details</p>
                                 </a>
                             </div>
                             <div className='box-border block text-right intersect-once intersect:motion-preset-slide-left motion-duration-1400'>
-                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('ss'); handleItem('s2')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline'>
+                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('ss'); handleItem('s2')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline' href='#top1'>
                                     Secondary Sponsors
                                     <p className='text-moss text-[1.125rem] leading-[1.7] break-normal overflow-hidden relative z-2 mt-0 mb-[2.5rem] block font-medium'>+ View Details</p>
                                 </a>
                             </div>
                             <div className='box-border block text-right intersect-once intersect:motion-preset-slide-left motion-duration-1600'>
-                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('bridesmaids'); handleItem('s3')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline'>
+                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('bridesmaids'); handleItem('s3')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline' href='#top1'>
                                     Bridesmaids
                                     <p className='text-moss text-[1.125rem] leading-[1.7] break-normal overflow-hidden relative z-2 mt-0 mb-[2.5rem] block font-medium'>+ View Details</p>
                                 </a>
                             </div>
                             <div className='box-border block text-right intersect-once intersect:motion-preset-slide-left motion-duration-1800'>
-                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('groomsmen'); handleItem('s4')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline'>
+                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('groomsmen'); handleItem('s4')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline' href='#top1'>
                                     Groomsmen
                                     <p className='text-moss text-[1.125rem] leading-[1.7] break-normal overflow-hidden relative z-2 mt-0 mb-[2.5rem] block font-medium'>+ View Details</p>
                                 </a>
                             </div>
                             <div className='box-border block text-right intersect-once intersect:motion-preset-slide-left motion-duration-2000'>
-                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('bearers'); handleItem('s5')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline'>
+                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('bearers'); handleItem('s5')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline' href='#top1'>
                                     Bearers
                                     <p className='text-moss text-[1.125rem] leading-[1.7] break-normal overflow-hidden relative z-2 mt-0 mb-[2.5rem] block font-medium'>+ View Details</p>
                                 </a>
                             </div>
                             <div className='box-border block text-right intersect-once intersect:motion-preset-slide-left motion-duration-2200'>
-                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('parents'); handleItem('s6')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline'>
+                                <a onClick={toggleNav} onClickCapture={() => {handleNavigation('parents'); handleItem('s6')}} className='text-moss text-[1.9rem] leading-[1] box-border hover:underline' href='#top1'>
                                     Parents
                                     <p className='text-moss text-[1.125rem] leading-[1.7] break-normal overflow-hidden relative z-2 mt-0 mb-[2.5rem] block font-medium'>+ View Details</p>
                                 </a>
@@ -102,7 +109,7 @@ const AbaysM = () => {
                 <span className={`block h-1 w-7 bg-moss ${toggleMenu? 'scale-0 opacity-0': ''}`}></span>
                 <span className={`block h-1 w-7 bg-moss ${toggleMenu? '-rotate-45 -translate-y-1': ''}`}></span>
             </button>
-            <div className='relative flex flex-col bg-clip-padding box-border'>
+            <div id='top1' className='relative flex flex-col bg-clip-padding box-border'>
                 {/* TITLE */}
                 <div className='relative z-1 h-[4.3rem] flex items-center justify-between p-[15px box-border] intersect-once intersect:motion-preset-slide-right motion-duration-1000'>
                     <h1 className='text-moss text-[2.2rem] pt-[50px] ml-[15px] font-medium'>&nbsp;Wedding Entourage</h1>

@@ -39,7 +39,7 @@ const Header = () => {
                     <div className='flex flex-wrap mr-[-15px] ml-[-15px] box-border '>
                         <div className='h-[300px] grow-0 shrink-0 basis-[16%] max-w-[16%] relative w-full min-h-[1px] pr-[15px] pl-[15px] box-border block motion-preset-slide-up motion-duration-1000'>
                             {/* WEDDING DATE */}
-                            <p className='text-moss w-[300px] h-[130px] -rotate-90 absolute top-[4rem] left-[-1rem] text-[1.625rem] tracking-[1px] leading-[1.7] mt-[0] mb-[1rem] box-border block space-y-[1em] space-x-[0px]'>November 28, 2025</p>
+                            <p className='text-moss w-[300px] h-[130px] -rotate-90 absolute top-[4rem] left-[-1rem] text-[1.625rem] tracking-[1px] leading-[1.7] mt-[0] mb-[1rem] box-border block space-y-[1em] space-x-[0px]'>November 18, 2025</p>
                         </div>
                         {/* IMAGE 2 */}
                         <div className='shrink-0 basis-[50%] max-w-[50%] relative w-full min-h-[1px] pr-[15px] pl-[15px] box-border block motion-preset-slide-left motion-duration-1000'>

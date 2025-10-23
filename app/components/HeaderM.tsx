@@ -19,7 +19,7 @@ const HeaderM = () => {
             {/* DATE */}
             <div className='relative w-screen mt-[5rem] box-border block break-words text-right motion-preset-slide-right motion-duration-2000'>
                 <p className='top-[65px] left-[-55px] block text-[1.4rem] text-moss transform -rotate-90 absolute z-2 mt-0 mb-[1rem]
-                space-y-[1em] space-x-[0px] break-words text-right'>November 28, 2025</p>
+                space-y-[1em] space-x-[0px] break-words text-right'>November 18, 2025</p>
             </div>
             {/* IMAGE 2 */}
             <div className='w-[80%] max-w-[80%] h-[0%] relative ml-auto box-border block min-h-[25%] align-middle motion-preset-slide-left motion-duration-2000'>

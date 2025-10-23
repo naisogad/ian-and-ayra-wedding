@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const ThemeM = () => {
   return (
-    <section className='min-h-[600px] pt-[12rem] pr-[0.5rem] pb-[4rem] relative justify-center flex flex-wrap box-border lg:hidden md:hidden'>
-        <div className='w-[12rem] h-[12rem] top-[5%] left-[60%] absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
+    <section className='min-h-[600px] pt-[7.5rem] pr-[0.5rem] pb-[4rem] relative justify-center flex flex-wrap box-border lg:hidden md:hidden'>
+        <div className='w-[12rem] h-[12rem] top-[0%] left-[60%] absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
             <Image 
                 alt=''
                 src={'/flowers/floater_5.png'}
@@ -41,10 +41,10 @@ const ThemeM = () => {
                                 <p className='text-moss text-[1.125rem]'>We kindly ask our guests to dress in semi-formal or smart casual attire for our special day.</p>
                             </div>
                             <div className='box-border block text-left pl-[15px] pr-[15px] mb-[1rem] intersect-once intersect:motion-preset-slide-left motion-duration-1800'>
-                                <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>Ladies:</a> Floor-length gowns or elegant cocktail dresses.</p>
+                                <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>For the Ladies:</a>Feel effortlessly elegant in a flowy dress or chic jumpsuit—perfect for day-to-night celebration vibes. Pair with comfy heels or flats and your prettiest smile. ✨</p>
                             </div>
                             <div className='box-border block text-left pl-[15px] pr-[15px] mb-[4rem] intersect-once intersect:motion-preset-slide-left motion-duration-2100'>
-                                <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>Gentlemen:</a> Tuxedos or dark suits with tie.</p>
+                                <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>For the Gentlemen:</a>Keep it sharp but relaxed—a button-down with slacks or chinos, and maybe a blazer if you’d like. Loafers or dress shoes complete the look. 👔</p>
                             </div>
                             {/* TITLE */}
                             <div className='box-border block pl-[15px] pr-[15px] intersect-once intersect:motion-preset-slide-left motion-duration-2400'>
