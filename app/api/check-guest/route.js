@@ -1,41 +1,77 @@
 import { google } from "googleapis";
 
+// ✅ POST – main handler
 export async function POST(request) {
   try {
     const { name } = await request.json();
+
     if (!name) {
-      return Response.json({ allowed: false, error: "Name missing" }, { status: 400 });
+      return Response.json(
+        { allowed: false, error: "Name is required." },
+        { status: 400 }
+      );
     }
 
-    // Initialize Google Sheets API
+    // ✅ Load and validate environment variables
+    const {
+      GOOGLE_SHEETS_ID,
+      GOOGLE_CLIENT_EMAIL,
+      GOOGLE_PRIVATE_KEY,
+      GOOGLE_PROJECT_ID,
+    } = process.env;
+
+    if (!GOOGLE_SHEETS_ID || !GOOGLE_CLIENT_EMAIL || !GOOGLE_PRIVATE_KEY) {
+      return Response.json(
+        { allowed: false, error: "Missing Google API credentials." },
+        { status: 500 }
+      );
+    }
+
+    // ✅ Fix private key formatting (Vercel issue)
+    const privateKey = GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n");
+
+    // ✅ Initialize Google Sheets API
     const auth = new google.auth.GoogleAuth({
       credentials: {
         type: "service_account",
-        project_id: process.env.GOOGLE_PROJECT_ID,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-        client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        project_id: GOOGLE_PROJECT_ID,
+        private_key: privateKey,
+        client_email: GOOGLE_CLIENT_EMAIL,
       },
       scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
     });
 
     const sheets = google.sheets({ version: "v4", auth });
 
-    // Fetch the guest list
-    const range = "GUESTLIST!A:A"; // 👈 adjust this sheet name and column
+    // ✅ Fetch guest list (adjust tab name and range as needed)
+    const range = "GUESTLIST!A:A";
     const response = await sheets.spreadsheets.values.get({
-      spreadsheetId: process.env.GOOGLE_SHEETS_ID,
+      spreadsheetId: GOOGLE_SHEETS_ID,
       range,
     });
 
     const rows = response.data.values || [];
+    const guestNames = rows
+      .map((r) => r[0]?.trim().toLowerCase())
+      .filter(Boolean);
 
-    // Normalize both input and guest names for better match
-    const guestNames = rows.map(r => r[0]?.trim().toLowerCase()).filter(Boolean);
-    const allowed = guestNames.includes(name.trim().toLowerCase());
+    const normalizedName = name.trim().toLowerCase();
+    const allowed = guestNames.includes(normalizedName);
 
     return Response.json({ allowed });
   } catch (error) {
-    console.error("Error checking guest list:", error);
-    return Response.json({ allowed: false, error: "Server error" }, { status: 500 });
+    console.error("❌ Error checking guest list:", error);
+    return Response.json(
+      { allowed: false, error: error.message || "Server error" },
+      { status: 500 }
+    );
   }
+}
+
+// ✅ Optional GET endpoint (for testing)
+export async function GET() {
+  return new Response(
+    "✅ /api/check-guest endpoint is live. Use POST with { name } JSON body to verify guests.",
+    { status: 200 }
+  );
 }
