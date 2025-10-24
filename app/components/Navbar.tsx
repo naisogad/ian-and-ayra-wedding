@@ -37,10 +37,11 @@ const Navbar = () => {
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#top">Home</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#couple">The Couple</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abays">Entourage</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#schedule">Schedule</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#theme">Theme</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#schedule">Timeline</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#theme">Wedding Attire</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#gallery">Our Story</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvp">RSVP</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#giftG">Gift Guide</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#faqs">FAQs</a></li>
           </ul>
         </div>
@@ -50,10 +51,11 @@ const Navbar = () => {
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#top">Home</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#coupleM">The Couple</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abaysM">Entourage</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#scheduleM">Schedule</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#themeM">Theme</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#scheduleM">Timeline</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#themeM">Wedding Attire</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#galleryM">Our Story</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvpM">RSVP</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#giftGM">Gift Guide</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#faqsM">FAQs</a></li>
           </ul>
         </div>

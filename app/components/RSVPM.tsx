@@ -20,7 +20,7 @@ const RSVPM = () => {
   // ✨ New guest list check states
   const [isAllowed, setIsAllowed] = useState(null);
   const [checkingGuest, setCheckingGuest] = useState(false);
-  const [message, setMessage] = useState("Fill in your name");
+  const [message, setMessage] = useState('Fill in your name');
 
   const options = [
     { value: "will attend", label: "will attend" },
@@ -51,7 +51,7 @@ const RSVPM = () => {
     const trimmedName = formData.name.trim();
     if (!trimmedName) {
       setIsAllowed(null);
-      setMessage("Fill in your name");
+      setMessage("");
       return;
     }
 
@@ -70,7 +70,7 @@ const RSVPM = () => {
           setMessage("Fill in your email");
         } else {
           setIsAllowed(false);
-          setMessage("Name not found on the guest list");
+          setMessage("");
         }
       } catch (err) {
         console.error("Error checking guest list:", err);
@@ -136,10 +136,10 @@ const RSVPM = () => {
 
   let buttonText = buttonLabel();
   function buttonLabel() {
-    if (checkingGuest) return "checking guest list...";
-    if (!isAllowed && !checkingGuest && !isNameEmpty)
-      return "name not in guest list";
-    if (isNameEmpty) return "fill in your name";
+    if (checkingGuest || (!isAllowed && !checkingGuest && !isNameEmpty) || isNameEmpty) return "submit";
+    // if (!isAllowed && !checkingGuest && !isNameEmpty)
+    //   return "submit";
+    // if (isNameEmpty) return "submit";
     if (isEmailEmpty) return "fill in your email";
     if (isMobileEmpty) return "fill in your mobile";
     if (submitting) return "submitting...";
@@ -163,7 +163,7 @@ const RSVPM = () => {
       {/* FLOWER */}
       <div
         id="rsvpM"
-        className="w-[12rem] h-[16rem] top-[-27%] left-[20%] rotate-275 absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-down motion-duration-1000"
+        className="w-[12rem] h-[16rem] top-[-9rem] left-[20%] rotate-275 absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-down motion-duration-1000"
       >
         <Image src={"/flowers/floater_7.png"} alt="" fill className="object-cover" />
       </div>
@@ -192,7 +192,13 @@ const RSVPM = () => {
                   placeholder="your name here"
                   value={formData.name}
                   onChange={handleChange}
-                  className="bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
+                  className={`bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.3rem] outline-none appearance-none border-2 ${
+                    isAllowed === false
+                      ? "border-red-400"
+                      : isAllowed === true
+                      ? "border-moss"
+                      : "border-shadow"
+                  }`}
                 />
                 <span>,</span>
                 <DropdownRadioButton
@@ -202,8 +208,68 @@ const RSVPM = () => {
                   width={97}
                 />
                 <span>the wedding.</span>
-              </div>
 
+                {/* 🌸 FRIENDLY MESSAGE SECTION */}
+                <div className="mt-4 min-h-[2rem] transition-all duration-300">
+                  <AnimatePresence mode="wait">
+                    {checkingGuest && (
+                      <motion.p
+                        key="checking"
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -5 }}
+                        className="text-moss text-[1.125rem] pt-0 pb-5 flex items-center gap-2"
+                      >
+                        <span className="inline-block w-4 h-4 border-2 border-moss rounded-full border-t-transparent animate-spin"></span>
+                        Checking guest list...
+                      </motion.p>
+                    )}
+
+                    {isAllowed === true && (
+                      <motion.p
+                        key="allowed"
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -5 }}
+                        className="text-moss font-medium text-[1.125rem] flex items-center gap-2 bg-green-50/60 p-3 rounded-lg border border-green-200"
+                      >
+                        <span className="text-green-600 text-xl">🌾</span>
+                        Welcome! You’re on the guest list.
+                      </motion.p>
+                    )}
+
+                    {isAllowed === false && (
+                      <motion.div
+                        key="not-allowed"
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -5 }}
+                        className="text-red-500 text-[1.125rem] flex flex-col items-start bg-red-50/60 p-3 rounded-lg border border-red-200"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="text-[1.125rem] ">🌺</span>
+                          <span>We couldn’t find your name on the guest list.</span>
+                        </div>
+                        <p className="text-moss mt-2 ml-7 text-[1.125rem] italic">
+                          Kindly reach out to the couple for assistance.
+                        </p>
+                      </motion.div>
+                    )}
+
+                    {isAllowed === null && !checkingGuest && (
+                      <motion.p
+                        key="neutral"
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -5 }}
+                        className="text-moss text-[1.125rem] bg-green-50/60 p-3 rounded-lg border border-green-200"
+                      >
+                        {message || "Please type your name to start 💌"}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </div>
               {/* EMAIL + MOBILE */}
               <div className="text-left font-georgia text-moss pb-[1.5em] relative box-border text-[1.125rem] leading-[1.7]">
                 <span>You can contact and bring me more info at:</span>

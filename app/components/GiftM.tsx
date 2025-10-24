@@ -4,7 +4,7 @@ import ImageC from './small_components/ImageC';
 
 const GiftM = () => {
   return (
-    <section className='min-h-[600px] pt-[12rem] pr-[0.5rem] pb-[2rem] mb-10 relative justify-center flex flex-wrap box-border lg:hidden md:hidden'>
+    <section id='giftGM' className='min-h-[600px] pt-[12rem] pr-[0.5rem] pb-[2rem] mb-10 relative justify-center flex flex-wrap box-border lg:hidden md:hidden'>
             <div className='w-[12rem] h-[12rem] top-[4%] left-[60%] absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                 <Image 
                     alt=''
