@@ -11,9 +11,9 @@ const HeaderM = () => {
                 {/* IMAGE 1 */}
                 <Image
                     alt=''
-                    src={'/pictures/photo-1.jpg'}
+                    src={'/pictures/photo-2.jpg'}
                     fill
-                    className='object-cover object-[0%_80%]'
+                    className='object-cover object-[0%_60%]'
                 />
             </div>
             {/* DATE */}
@@ -25,7 +25,7 @@ const HeaderM = () => {
             <div className='w-[80%] max-w-[80%] h-[0%] relative ml-auto box-border block min-h-[25%] align-middle motion-preset-slide-left motion-duration-2000'>
                 <Image 
                     alt=''
-                    src={'/pictures/photo-2.jpg'}
+                    src={'/pictures/photo-1.jpg'}
                     fill
                     className='object-cover object-[0%_80%]'
                 />

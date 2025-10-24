@@ -17,7 +17,7 @@ const AboutM = () => {
                         <p className='mt-[0.5rem] break-words relative z-2 text-left mb-[1rem] block intersect-once intersect:motion-preset-slide-left motion-duration-1400'>We’re so excited to be getting married and to share this special journey with our favorite people—you! Your presence means the world to us.<br /> </p>
                         <p className='mt-[0.5rem] break-words relative z-2 text-left mb-[1rem] block intersect-once intersect:motion-preset-slide-left motion-duration-1600'>This site has all the wedding details and helpful info you’ll need.<br /> </p>
                         <p className='mt-[0.5rem] break-words relative z-2 text-left mb-[1rem] block intersect-once intersect:motion-preset-slide-left motion-duration-1800'>Thank you for your love and support—we can’t wait to celebrate with you on our big day! 💍✨</p>
-                        <p className='mt-[0.5rem] whitespace-normal text-clip break-words relative z-2 text-left mb-[1rem] box-border block font-semibold intersect-once intersect:motion-preset-slide-left motion-duration-2000'>- Ayra & Ian</p>
+                        <p className='mt-[0.5rem] whitespace-normal text-clip break-words relative z-2 text-left mb-[1rem] box-border block font-semibold intersect-once intersect:motion-preset-slide-left motion-duration-2000'>- Ian & Ayra</p>
                     </div>
                 </div>
             </div>

@@ -90,7 +90,7 @@ const PhotosM = () => {
                 <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pl-[15px] pr-[15px] bg-amber-50 box-border block'>
                   {/* TITLE */}
                   <div className='box-border block pl-[15px] pr-[15px] pt-10 intersect-once intersect:motion-preset-slide-left motion-duration-1300'>
-                    <h3 className='text-moss text-[2rem] leading-[3] text-center'>The Transition</h3>
+                    <p className='text-moss text-[2rem] leading-[1] text-center font-medium'>How It All Began</p>
                   </div>
                   <div className='flex box-border pb-[2rem] overflow-x-auto snap-x snap-mandatory snap-center'>
                      <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'><ImageFlip frontImageSrc={'/pictures/transition/couple-1.jpg'} backContent={<p className="text-moss p-4"><a className='font-bold'> June 16, 2024 –</a><br /><br />Unang bulaklak na natanggap mo sakin…<br />gusto mo ng flowers.<br />May nag f-fund raising na student, pinabili mo ako.</p>} height={500} width={300}/></div>
@@ -132,7 +132,7 @@ const PhotosM = () => {
             <div className='bg-amber-50 z-0 ml-auto pt-[1rem] grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] max-h-[1000rem] box-border block overflow-y-auto overflow-x-hidden intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
               {/* TITLE */}
               <div className='box-border block pl-[15px] pr-[15px] pb-[0rem] intersect-once intersect:motion-preset-slide-left motion-duration-1300'>
-                <h3 className='text-moss text-[2rem] leading-[3] text-center'>The Proposal</h3>
+                <p className='text-moss text-[2rem] leading-[1] text-center font-medium'>The Proposal</p>
               </div>
               {/* DETAIL */}
               <div className='box-border block text-left pl-[15px] pr-[15px] mt-6 mb-6 intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
@@ -170,7 +170,7 @@ const PhotosM = () => {
             <div className='bg-amber-50 z-0 ml-auto pt-[1rem] mb-[5rem] grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] max-h-[100rem] box-border block overflow-y-auto intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
               {/* TITLE */}
               <div className='box-border block pl-[15px] pr-[15px] intersect-once intersect:motion-preset-slide-left motion-duration-1300'>
-                <h3 className='text-moss text-[2rem] leading-[3] text-center'>Prenup</h3>
+                <p className='text-moss text-[2rem] leading-[1] text-center font-medium'>Moments Before 'I Do'</p>
               </div>
               {/* DETAIL */}
               <div className='box-border block text-left pl-[15px] pr-[15px] mt-6 mb-6 intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
@@ -179,11 +179,11 @@ const PhotosM = () => {
                 </p>
               </div>
               <div className='flex box-border overflow-x-auto'>
-                <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p1.jpg'} height={500} width={300}/></div>
+                <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p5.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p2.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p3.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p4.jpg'} height={500} width={300}/></div>
-                <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p5.jpg'} height={500} width={300}/></div>
+                <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p16.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p6.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p7.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p8.jpg'} height={500} width={300}/></div>
@@ -194,7 +194,7 @@ const PhotosM = () => {
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p13.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p14.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p15.jpg'} height={500} width={300}/></div>
-                <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p16.jpg'} height={500} width={300}/></div>
+                <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p1.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p17.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p18.jpg'} height={500} width={300}/></div>
                 <div className='relative cursor-pointer intersect-once intersect:motion-preset-slide-left motion-duration-1000'> <ImageC frontImageSrc={'/pictures/prenup/p19.jpg'} height={500} width={300}/></div>

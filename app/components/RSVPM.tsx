@@ -8,7 +8,7 @@ import DropdownRadioButton from "./small_components/DropdownRadioButton";
 const RSVPM = () => {
   const [formData, setFormData] = useState({
     name: "",
-    attendance: "am attending",
+    attendance: "will attend",
     email: "",
     mobile: "",
   });
@@ -17,37 +17,91 @@ const RSVPM = () => {
   const [success, setSuccess] = useState(false);
   const [hasFadedIn, setHasFadedIn] = useState(false);
 
+  // ✨ New guest list check states
+  const [isAllowed, setIsAllowed] = useState(null);
+  const [checkingGuest, setCheckingGuest] = useState(false);
+  const [message, setMessage] = useState("Fill in your name");
+
   const options = [
-    { value: "am attending", label: "am attending" },
-    { value: "am not attending", label: "am not attending" },
+    { value: "will attend", label: "will attend" },
+    { value: "unable to attend", label: "unable to attend" },
   ];
 
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    // restrict mobile to numbers only
+    if (name === "mobile") {
+      const onlyNumbers = value.replace(/\D/g, "");
+      setFormData((prev) => ({ ...prev, [name]: onlyNumbers }));
+      return;
+    }
+
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // Dropdown change
   const handleDropdownChange = (value) => {
     setFormData((prev) => ({ ...prev, attendance: value }));
   };
 
+  // ✅ Automatically check guest list when name changes
+  useEffect(() => {
+    const trimmedName = formData.name.trim();
+    if (!trimmedName) {
+      setIsAllowed(null);
+      setMessage("Fill in your name");
+      return;
+    }
+
+    const timeout = setTimeout(async () => {
+      setCheckingGuest(true);
+      try {
+        const res = await fetch("/api/check-guest", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name: trimmedName }),
+        });
+        const data = await res.json();
+
+        if (data.allowed) {
+          setIsAllowed(true);
+          setMessage("Fill in your email");
+        } else {
+          setIsAllowed(false);
+          setMessage("Name not found on the guest list");
+        }
+      } catch (err) {
+        console.error("Error checking guest list:", err);
+        setMessage("Error checking guest list");
+      } finally {
+        setCheckingGuest(false);
+      }
+    }, 600); // debounce for smoother typing
+
+    return () => clearTimeout(timeout);
+  }, [formData.name]);
+
+  // Submit handler
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!formData.name.trim()) return;
+    if (!isAllowed) {
+      alert("Sorry, your name is not listed on the guest list.");
+      return;
+    }
 
     setSubmitting(true);
     setSuccess(false);
     confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
 
     const formUrl =
-      "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse";
-
+      "https://docs.google.com/forms/d/1HpYNwRIcl5wlZPZQHvksjeITeCEAysbg0OCKvW2yPqc/formResponse";
     const formBody = new URLSearchParams();
-    formBody.append("entry.1234567890", formData.name);
-    formBody.append("entry.987654321", formData.attendance);
-    formBody.append("entry.111222333", formData.email);
-    formBody.append("entry.444555666", formData.mobile);
+    formBody.append("entry.1606607000", formData.name);
+    formBody.append("entry.1571335665", formData.attendance);
+    formBody.append("entry.122322336", formData.email);
+    formBody.append("entry.2058451053", formData.mobile);
 
     try {
       await fetch(formUrl, {
@@ -60,15 +114,17 @@ const RSVPM = () => {
       setSuccess(true);
       setFormData({
         name: "",
-        attendance: "am attending",
+        attendance: "will attend",
         email: "",
         mobile: "",
       });
+      setIsAllowed(null);
+      setMessage("Fill in your name");
 
-      // Auto-close modal after 4 seconds
       setTimeout(() => setSuccess(false), 4000);
     } catch (error) {
       console.error("Error submitting form", error);
+      setMessage("Error submitting RSVP");
     } finally {
       setSubmitting(false);
     }
@@ -78,19 +134,28 @@ const RSVPM = () => {
   const isEmailEmpty = !formData.email.trim();
   const isMobileEmpty = !formData.mobile.trim();
 
-  let buttonText = "Submit";
-  if (isNameEmpty) buttonText = "Fill in your name";
-  else if (isEmailEmpty) buttonText = "Fill in your email";
-  else if (isMobileEmpty) buttonText = "Fill in your mobile";
-  else if (submitting) buttonText = "Submitting...";
+  let buttonText = buttonLabel();
+  function buttonLabel() {
+    if (checkingGuest) return "checking guest list...";
+    if (!isAllowed && !checkingGuest && !isNameEmpty)
+      return "name not in guest list";
+    if (isNameEmpty) return "fill in your name";
+    if (isEmailEmpty) return "fill in your email";
+    if (isMobileEmpty) return "fill in your mobile";
+    if (submitting) return "submitting...";
+    return "submit";
+  }
 
-  const isDisabled = submitting || isNameEmpty || isEmailEmpty || isMobileEmpty;
+  const isDisabled =
+    submitting ||
+    isNameEmpty ||
+    isEmailEmpty ||
+    isMobileEmpty ||
+    checkingGuest ||
+    !isAllowed;
 
-  // 🪄 if form just became ready, mark that fade happened once
-  React.useEffect(() => {
-    if (!isDisabled && !hasFadedIn) {
-      setHasFadedIn(true);
-    }
+  useEffect(() => {
+    if (!isDisabled && !hasFadedIn) setHasFadedIn(true);
   }, [isDisabled, hasFadedIn]);
 
   return (
@@ -136,26 +201,29 @@ const RSVPM = () => {
                   onChange={handleDropdownChange}
                   width={97}
                 />
-                <span>the festivities.</span>
+                <span>the wedding.</span>
               </div>
 
               {/* EMAIL + MOBILE */}
               <div className="text-left font-georgia text-moss pb-[1.5em] relative box-border text-[1.125rem] leading-[1.7]">
-                <span>You can ping me, ring me, or bring me more info at:</span>
+                <span>You can contact and bring me more info at:</span>
                 <input
                   type="email"
                   name="email"
                   placeholder="my_email@example.com"
                   value={formData.email}
                   onChange={handleChange}
+                  disabled={!isAllowed}
                   className="bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
                 />
                 <input
                   type="tel"
                   name="mobile"
+                  size={11}
                   placeholder="09164568604"
                   value={formData.mobile}
                   onChange={handleChange}
+                  disabled={!isAllowed}
                   className="bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
                 />
               </div>
@@ -184,25 +252,20 @@ const RSVPM = () => {
       <AnimatePresence>
         {success && (
           <>
-            {/* Background Overlay */}
             <motion.div
               className="fixed inset-0 bg-moss/40 backdrop-blur-sm z-40"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             />
-
-            {/* Center Modal */}
             <motion.div
               className="fixed inset-0 flex items-center justify-center z-50"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.4, type: 'spring' }}
+              transition={{ duration: 0.4, type: "spring" }}
             >
               <div className="relative bg-amber-50 rounded-2xl shadow-lg border border-moss/20 p-8 text-center max-w-sm w-[90%] font-georgia">
-
-                {/* Small floral accent on top */}
                 <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
                   <Image
                     src="/flowers/floater_3.png"
@@ -212,8 +275,6 @@ const RSVPM = () => {
                     className="opacity-90 rotate-6"
                   />
                 </div>
-
-                {/* Message */}
                 <h3 className="text-3xl text-moss mb-3 tracking-wide">Thank You!</h3>
                 <p className="text-moss text-[1.125rem] mb-3">
                   Your RSVP has been received.
@@ -221,8 +282,6 @@ const RSVPM = () => {
                 <p className="text-moss text-[1.125rem]">
                   We can’t wait to celebrate this beautiful day with you 💐
                 </p>
-
-                {/* Decorative line */}
                 <div className="mt-5 flex justify-center">
                   <div className="w-16 h-[2px] bg-moss/40 rounded-full"></div>
                 </div>
