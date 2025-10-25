@@ -161,39 +161,39 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/ty.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[100%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 1 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Edward Ty</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Senior Pastor</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Ty</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p> */}
                             </div>
                             {/* ITEM 2 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/torres.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[40%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 2 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Joann Ty</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Torres</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p> */}
                             </div>
                             {/* ITEM 3 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/alandy-dy.png'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -201,57 +201,57 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 3 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Jerson Torres</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Pastor</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
+                                <h3 className='text-[1.78rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Alandy-dy</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p> */}
                             </div>
                             {/* ITEM 4 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/collilap.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[44.5%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 4 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Michelle Torres</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Collilap</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 5 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/camacho.jpg'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[63%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 5 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Edizer Driz</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and OFW</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Camacho</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and OFW</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 6 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/dinglasan.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[23.5%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 6 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Edna Sanchez</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single and OFW</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Dinglasan</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single and OFW</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 7 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
@@ -265,15 +265,15 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 7 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Rondolf Alandy-dy</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Senior Pastor</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Mujar</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Senior Pastor</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 8 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/villaverde.png'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -281,9 +281,9 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 8 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Marileth Alandy-dy</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[1.9rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Villaverde</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 9 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
@@ -297,9 +297,9 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 9 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Micheal Colilap</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Pastor</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Jabrica</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Pastor</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 10 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
@@ -313,9 +313,9 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 10 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Jaja Colilap</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife, Mother, and Campus Missionary</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Briones</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife, Mother, and Campus Missionary</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 11 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
@@ -329,249 +329,73 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 11 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>PJ Camacho</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Campus Missionary</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Lim</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Campus Missionary</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 12 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/ed-driz.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[60%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 12 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Karen Camacho</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife, Mother, and Campus Missionary</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Edizer Driz</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife, Mother, and Campus Missionary</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 13 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/edna-sanchez.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[10%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 13 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Joshua Mujar</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Edna Sanchez</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 14 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/che-hernandez.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[0%_100%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 14 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Sheryl Mujar</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Che Hernandez</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                             {/* ITEM 15 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/melith-ballon.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[0%_100%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 15 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Rodil Villaverde</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 16 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 16 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Evelyn Villaverde</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 17 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-male.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 17 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Cy Dinglasan</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 18 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 18 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Riza Dinglasan</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 19 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 19 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Che Hernandez</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 20 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 20 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Melith Ballon</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 21 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-male.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 21 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 pt-[0.75rem] pb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Larry Jabrica</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 22 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 22 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Gemma Jabrica</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 23 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-male.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 23 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-4 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Bernie Jabrica</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 24 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 24 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-4 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Bernie's Wife Jabrica</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 21 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-male.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 21 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Joseph Briones</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
-                            </div>
-                            {/* ITEM 22 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 22 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Cel Briones</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-3 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Melith Ballon</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Father</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
                         </div>  
                     )}
@@ -583,65 +407,33 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/mirhan.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[100%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 1 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px  ] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Vin Mirhan</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Businessman</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
+                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Mirhan</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband and Businessman</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p> */}
                             </div>
                             {/* ITEM 2 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/mercado.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[61%_0%]'
                                     loading='eager'
                                 />
                             </div>
                             {/* ITEM 2 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Rachel Mirhan</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Admin</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
-                            </div>
-                            {/* ITEM 3 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-male.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 3 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>MJ Mercado</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
-                            </div>
-                            {/* ITEM 4 */}
-                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
-                                <Image 
-                                    alt=''
-                                    src={'/pictures/abays/ph-female.png'}
-                                    fill
-                                    className='object-cover'
-                                    loading='eager'
-                                />
-                            </div>
-                            {/* ITEM 4 DETAILS */}
-                            <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Rachelle Mercado</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <a className='font-greatVibesR'>&</a> Mrs. Mercado</h3>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Admin</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p> */}
                             </div>
                         </div>
                     )}
@@ -686,7 +478,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/danielle-manalo.jpg'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -702,7 +494,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/katrice-villaflor.jpg'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -782,7 +574,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/pauline-ty.jpg'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -791,7 +583,7 @@ const AbaysM = () => {
                             {/* ITEM 9 DETAILS */}
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
                                 <h3 className='text-[2rem] pl-1 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Pauline Ty</h3>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Student</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
                             </div>
                             {/* ITEM 10 */}
@@ -814,7 +606,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-female.png'}
+                                    src={'/pictures/abays/angel-gratuito.jpg'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -868,7 +660,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/jp-ramirez.png'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -885,9 +677,9 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/harold-yap.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[40%_0%]'
                                     loading='eager'
                                 />
                             </div>
@@ -901,7 +693,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/jafet-bathan.png'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -917,7 +709,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/king-villanueva.jpg'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -949,7 +741,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/cj-villaverde.jpg'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -965,7 +757,7 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/keiffer-cortez.png'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -997,9 +789,9 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/charles-alcantara.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[40%_0%]'
                                     loading='eager'
                                 />
                             </div>
@@ -1013,9 +805,9 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/adi-balino.jpg'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[0%_0%]'
                                     loading='eager'
                                 />
                             </div>
@@ -1023,13 +815,13 @@ const AbaysM = () => {
                             <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
                                 <h3 className='text-[2rem] pl-2 mt-[0.75rem] mb-[0.75rem] leading-[2.5] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Adi Balino</h3>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'>“A Heart Led by Love, Grounded in Faith.”</p>
                             </div>
                             {/* ITEM 12 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/karlo-sandoval.png'}
                                     fill
                                     className='object-cover'
                                     loading='eager'
@@ -1082,9 +874,9 @@ const AbaysM = () => {
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
                                 <Image 
                                     alt=''
-                                    src={'/pictures/abays/ph-male.png'}
+                                    src={'/pictures/abays/justine-tuvieron.png'}
                                     fill
-                                    className='object-cover'
+                                    className='object-cover object-[0%_0%]'
                                     loading='eager'
                                 />
                             </div>
