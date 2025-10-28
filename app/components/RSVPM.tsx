@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import DropdownRadioButton from "./small_components/DropdownRadioButton";
+import Link from "next/link"
 
 const RSVPM = () => {
   const [formData, setFormData] = useState({
@@ -121,7 +122,7 @@ const RSVPM = () => {
       setIsAllowed(null);
       setMessage("Fill in your name");
 
-      setTimeout(() => setSuccess(false), 4000);
+      setTimeout(() => setSuccess(false), 100000);
     } catch (error) {
       console.error("Error submitting form", error);
       setMessage("Error submitting RSVP");
@@ -159,7 +160,7 @@ const RSVPM = () => {
   }, [isDisabled, hasFadedIn]);
 
   return (
-    <section className="min-h-[315px] pb-[1rem] mt-[12rem] relative justify-center flex flex-wrap box-border lg:hidden md:hidden">
+    <section className="min-h-[315px] pb-[1rem] mt-[10rem] relative justify-center flex flex-wrap box-border lg:hidden md:hidden">
       {/* FLOWER */}
       <div
         id="rsvpM"
@@ -351,6 +352,12 @@ const RSVPM = () => {
                 <div className="mt-5 flex justify-center">
                   <div className="w-16 h-[2px] bg-moss/40 rounded-full"></div>
                 </div>
+                <Link
+                  href="components/main" // 👈 change this to your main site path
+                  className="inline-block mt-3 bg-moss text-white px-6 py-2 rounded-lg hover:bg-olive transition-all"
+                >
+                  Go to the Wedding Website →
+                </Link>
               </div>
             </motion.div>
           </>

@@ -54,7 +54,7 @@ const Navbar = () => {
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#scheduleM">Timeline</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#themeM">Wedding Attire</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#galleryM">Our Story</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvpM">RSVP</a></li>
+            {/* <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvpM">RSVP</a></li> */}
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#giftGM">Gift Guide</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#faqsM">FAQs</a></li>
           </ul>

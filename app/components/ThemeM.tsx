@@ -52,44 +52,46 @@ const ThemeM = () => {
                             </div>
                             {/* DETAIL */}
                             <div className='box-border block text-left pl-[15px] pr-[15px] mt-6 intersect-once intersect:motion-preset-slide-left motion-duration-2700'>
-                                <p className='text-moss text-[1.125rem]'>Our wedding will feature these elegant colors. Feel free to incorporate them into your outfit! Lastly guests, wear your best accessories. Your smiles and lively personalities.    </p>
+                                <p className='text-moss text-[1.125rem]'>Our wedding will feature these elegant colors. We kindly ask that you skip the color black. Have fun mixing and matching the colors from our palette for your look! <br /> <br /> Lastly guests, wear your best accessories. Your smiles and lively personalities.    </p>
                             </div>
                             {/* COLORS */}
-                            <div className='flex flex-wrap justify-center gap-[2rem] text-center mt-[2rem] mb-[3rem] intersect-once intersect:motion-preset-slide-left motion-duration-3000'>                            
+                            <div className='flex flex-wrap justify-evenly gap-[2rem] text-center mt-[3rem] mb-[3rem] intersect-once intersect:motion-preset-slide-left motion-duration-3000'>
+                            {/* Guests palette */}
                                 {/* COLOR 1 */}
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-gold rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem]'>Gold</p>
-                                </div>
+                                {/* <div className='items-center flex flex-col box-border'>
+                                    <div className='bg-beige1 w-[4rem] h-[2rem] border-[0.1px] border-black/30'></div>
+                                    <div className='bg-cosmic-latte w-[4rem] h-[2rem] border-[0.1px] border-black/30'></div>
+                                    <p className='text-moss text-[1.125rem] mt-[0.5rem]'>Primary <br />Sponsor</p>
+                                </div> */}
                                 {/* COLOR 2 */}
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-goldenrod rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem]'>Golden Rod</p>
-                                </div>
+                                {/* <div className='items-center flex flex-col box-border'>
+                                    <div className='bg-darkseagreen w-[4rem] h-[2rem]'></div>
+                                    <div className='bg-olive w-[4rem] h-[2rem]'></div>
+                                    <p className='text-moss text-[1.125rem] mt-[0.5rem]'>Parents</p>
+                                </div> */}
                                 {/* COLOR 3 */}
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-darkseagreen rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem] leading-[0.9rem] text-clip'>Dark Sea <br />Green</p>
-                                </div>
+                                {/* <div className='items-center flex flex-col box-border'>
+                                    <div className='bg-black w-[4rem] h-[2rem]'></div>
+                                    <div className='bg-black w-[4rem] h-[2rem]'></div>
+                                    <p className='text-moss text-[1.125rem] mt-[0.5rem] '>Groomsmen</p>
+                                </div> */}
                                 {/* COLOR 4 */}
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-olive rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem]'>Olive</p>
-                                </div>
+                                {/* <div className='items-center flex flex-col box-border'>
+                                    <div className='bg-goldenrod  w-[4rem] h-[2rem]'></div>
+                                    <div className='bg-gold w-[4rem] h-[2rem]'></div>
+                                    <p className='text-moss text-[1.125rem] mt-[0.5rem] '>Bridesmaid<br />& Secondary <br />Sponsor</p>
+                                </div> */}
                                 {/* COLOR 5 */}
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-beige rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem]'>Beige</p>
+                            <div className='flex flex-col items-center box-border'>
+                                <div className='flex'>
+                                    <div className='bg-coffee w-[2.5rem] h-[8rem]'></div>
+                                    <div className='bg-espresso w-[2.5rem] h-[8rem]'></div>
+                                    <div className='bg-caramel w-[2.5rem] h-[8rem]'></div>
+                                    <div className='bg-hazelnut-brown w-[2.5rem] h-[8rem]'></div>
+                                    <div className='bg-nude-cola w-[2.5rem] h-[8rem]'></div>
                                 </div>
-                                {/* COLOR 6 */}
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-tan rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem]'>Tan</p>
-                                </div>
-                                <div className='items-center flex flex-col box-border'>
-                                    <div className='bg-saddlebrown rounded-full w-[4rem] h-[4rem]'></div>
-                                    <p className='text-moss text-[0.8rem] mt-[0.5rem]'>Saddle Brown</p>
-                                </div>
+                                <p className='text-moss text-[1.125rem] mt-[1rem]'>Guests</p>
+                            </div>
                             </div>
                         </div>
                     </div>

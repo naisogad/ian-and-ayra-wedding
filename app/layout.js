@@ -12,7 +12,7 @@ const greatVibes = Lobster({
 })
 
 export const metadata = {
-  title: "Ayra & Ian",
+  title: "Ian & Ayra",
   description: "Our Wedding",
 };
 

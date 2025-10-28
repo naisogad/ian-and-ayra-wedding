@@ -36,7 +36,7 @@ const PhotosM = () => {
   }, [hasStarted]);
 
   return (
-        <section id='galleryM' className='min-h-[600px] pt-[4rem] pb-[0rem] relative justify-center flex flex-wrap box-border mt-[8rem] mb-[6rem] z-0 lg:hidden md:hidden'>
+        <section id='galleryM' className='min-h-[600px] pt-[4rem] pb-[0rem] relative justify-center flex flex-wrap box-border mt-[8rem] mb-[0rem] z-0 lg:hidden md:hidden'>
             {/* FLOWER */}
             <div className='w-[12rem] h-[14rem] top-[-3%] left-[50%] rotate-275 absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-down motion-duration-1000'>
                 <Image 
@@ -167,7 +167,7 @@ const PhotosM = () => {
               </div>
             </div>
             {/* PRENUP */}
-            <div className='bg-amber-50 z-0 ml-auto pt-[1rem] mb-[5rem] grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] max-h-[100rem] box-border block overflow-y-auto intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
+            <div className='bg-amber-50 z-0 ml-auto pt-[1rem] mb-[1rem] grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] max-h-[100rem] box-border block overflow-y-auto intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
               {/* TITLE */}
               <div className='box-border block pl-[15px] pr-[15px] intersect-once intersect:motion-preset-slide-left motion-duration-1300'>
                 <p className='text-moss text-[2rem] leading-[1] text-center font-medium'>Moments Before 'I Do'</p>

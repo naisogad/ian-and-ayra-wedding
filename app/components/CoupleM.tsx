@@ -3,7 +3,7 @@ import React from 'react'
 
 const CoupleM = () => {
   return (
-    <section id='coupleM' className='min-h-[503px] pt-[4rem] pb-[4rem] relative justify-center flex flex-wrap box-border mt-[8rem] z-0 lg:hidden md:hidden'>\
+    <section id='coupleM' className='min-h-[503px] pt-[4rem] pb-[6rem] relative justify-center flex flex-wrap box-border mt-[8rem] z-0 lg:hidden md:hidden'>\
         {/* FLOWER */}
         <div className='w-[13rem] h-[12rem] top-[-3%] left-[1%] rotate-275 absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-down motion-duration-1000'>
             <Image 

@@ -322,7 +322,7 @@ const ScheduleM = () => {
                                 {/* QR DETAILS */}
                                 <div className='bg-amber-50 text-left text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-screen min-h-[1px] mr-[-15px] ml-[-15px] box-border block'>
                                     <div className='pl-[15px] pr-[15px]'>
-                                        <h3 className='text-[2rem] mt-[1.5rem] mb-[1.5rem] leading-[1.5] overflow-hidden text-ellipsis relative z-2 font-georgia intersect-once intersect:motion-preset-slide-right motion-duration-2000'>QR Code</h3>
+                                        <h3 className='text-[2rem] text-center mt-[1.5rem] mb-[1.5rem] leading-[1.5] overflow-hidden text-ellipsis relative z-2 font-georgia intersect-once intersect:motion-preset-slide-right motion-duration-2000'>Scan to Get Directions</h3>
                                     </div>
                                 </div>
                                 {/* QR IMAGE */}
