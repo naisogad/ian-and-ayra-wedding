@@ -44,7 +44,7 @@ const ThemeM = () => {
                                 <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>For the Ladies:</a>Feel effortlessly elegant in a flowy dress or chic jumpsuit—perfect for day-to-night celebration vibes. Pair with comfy heels or flats and your prettiest smile. ✨</p>
                             </div>
                             <div className='box-border block text-left pl-[15px] pr-[15px] mb-[4rem] intersect-once intersect:motion-preset-slide-left motion-duration-2100'>
-                                <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>For the Gentlemen:</a>Keep it sharp but relaxed—a button-down with slacks or chinos, and maybe a blazer if you’d like. Loafers or dress shoes complete the look. 👔</p>
+                                <p className='text-moss text-[1.125rem]'><a className='font-semibold inline-block'>For the Gentlemen:</a>Aim for a clean and classic look — something comfortable, coordinated, and event-appropriate. Whether it’s a dress shirt, polo, or simple blazer and khaki or slacks, just come looking your best. 👔</p>
                             </div>
                             {/* TITLE */}
                             <div className='box-border block pl-[15px] pr-[15px] intersect-once intersect:motion-preset-slide-left motion-duration-2400'>

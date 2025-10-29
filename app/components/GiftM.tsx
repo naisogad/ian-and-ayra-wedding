@@ -138,7 +138,7 @@ const GiftM = () => {
 
                 <button
                   onClick={() => setShowModal(false)}
-                  className="bg-moss text-white font-georgia px-5 py-2 rounded-full hover:bg-moss/90 transition-all duration-300 mt-4"
+                  className="bg-moss text-white font-georgia text-lg px-5 py-2 rounded-full hover:bg-moss/90 transition-all duration-300 mt-4"
                 >
                   Close
                 </button>
