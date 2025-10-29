@@ -329,7 +329,7 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 11 DETAILS */}
                             <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. <br /><a className='font-greatVibesR '>&</a><br /> Mrs. Lim</p>
+                                <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. Gerard Lim<br /><a className='font-greatVibesR '>&</a><br /> Mrs. Maureen Lim</p>
                                 {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Campus Missionary</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>

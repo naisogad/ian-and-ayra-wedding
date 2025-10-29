@@ -84,7 +84,7 @@ const GiftM = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.4, ease: 'easeOut' }}
+              transition={{ duration: 0.2, ease: 'easeOut' }}
               onClick={() => setShowModal(false)}
             />
 
@@ -94,7 +94,7 @@ const GiftM = () => {
               initial={{ opacity: 0, scale: 0.9, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 40 }}
-              transition={{ duration: 0.35, ease: 'easeInOut' }}
+              transition={{ duration: 0.1, ease: 'easeInOut' }}
             >
               <div
                 className="bg-white/90 backdrop-blur-md border border-moss/20 shadow-2xl rounded-2xl max-w-[90%] w-[22rem] max-h-[85vh] overflow-y-auto p-6 relative text-center scrollbar-thin scrollbar-thumb-moss/40 scrollbar-track-transparent"

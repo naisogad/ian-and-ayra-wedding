@@ -9,14 +9,16 @@ import Link from "next/link"
 const RSVPM = () => {
   const [formData, setFormData] = useState({
     name: "",
-    attendance: "will attend",
+    attendance: "",
     email: "",
     mobile: "",
   });
 
-  const [submitting, setSubmitting] = useState(false);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [hasFadedIn, setHasFadedIn] = useState(false);
+  const [lastAttendance, setLastAttendance] = useState("");
 
   // ✨ New guest list check states
   const [isAllowed, setIsAllowed] = useState(null);
@@ -84,20 +86,22 @@ const RSVPM = () => {
     return () => clearTimeout(timeout);
   }, [formData.name]);
 
-  // Submit handler
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!isAllowed) {
       alert("Sorry, your name is not listed on the guest list.");
       return;
     }
 
-    setSubmitting(true);
-    setSuccess(false);
-    confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
+    setIsSubmitting(true);
+    if (formData.attendance.trim().toLowerCase() === "will attend") {
+      confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
+    }
 
     const formUrl =
-      "https://docs.google.com/forms/d/1HpYNwRIcl5wlZPZQHvksjeITeCEAysbg0OCKvW2yPqc/formResponse";
+      "https://docs.google.com/forms/d/e/1FAIpQLSfmW9SPvlKrpXzK1Rjt-SniQrX5S8wvGFXG2rHxZcQHhqQpXg/formResponse";
+
     const formBody = new URLSearchParams();
     formBody.append("entry.1606607000", formData.name);
     formBody.append("entry.1571335665", formData.attendance);
@@ -112,22 +116,16 @@ const RSVPM = () => {
         body: formBody.toString(),
       });
 
-      setSuccess(true);
-      setFormData({
-        name: "",
-        attendance: "will attend",
-        email: "",
-        mobile: "",
-      });
-      setIsAllowed(null);
-      setMessage("Fill in your name");
+      setLastAttendance(formData.attendance);
 
-      setTimeout(() => setSuccess(false), 100000);
+      setSuccess(true);
     } catch (error) {
-      console.error("Error submitting form", error);
-      setMessage("Error submitting RSVP");
+      console.error("Form submission failed:", error);
     } finally {
-      setSubmitting(false);
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setFormData({ name: "", attendance: "", email: "", mobile: "" });
+      }, 500);
     }
   };
 
@@ -138,17 +136,14 @@ const RSVPM = () => {
   let buttonText = buttonLabel();
   function buttonLabel() {
     if (checkingGuest || (!isAllowed && !checkingGuest && !isNameEmpty) || isNameEmpty) return "submit";
-    // if (!isAllowed && !checkingGuest && !isNameEmpty)
-    //   return "submit";
-    // if (isNameEmpty) return "submit";
     if (isEmailEmpty) return "fill in your email";
     if (isMobileEmpty) return "fill in your mobile";
-    if (submitting) return "submitting...";
+    if (isSubmitting) return "submitting...";
     return "submit";
   }
 
   const isDisabled =
-    submitting ||
+    isSubmitting ||
     isNameEmpty ||
     isEmailEmpty ||
     isMobileEmpty ||
@@ -342,18 +337,35 @@ const RSVPM = () => {
                     className="opacity-90 rotate-6"
                   />
                 </div>
+
                 <h3 className="text-3xl text-moss mb-3 tracking-wide">Thank You!</h3>
-                <p className="text-moss text-[1.125rem] mb-3">
-                  Your RSVP has been received.
-                </p>
-                <p className="text-moss text-[1.125rem]">
-                  We can’t wait to celebrate this beautiful day with you 💐
-                </p>
+
+                {/* 🌸 Conditional message based on attendance */}
+                {lastAttendance === "unable to attend" ? (
+                  <>
+                    <p className="text-moss text-[1.125rem] mb-3">
+                      Your RSVP has been received.
+                    </p>
+                    <p className="text-moss text-[1.125rem]">
+                      We’re sad you can’t make it, but we truly appreciate your message 💛
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-moss text-[1.125rem] mb-3">
+                      Your RSVP has been received.
+                    </p>
+                    <p className="text-moss text-[1.125rem]">
+                      We can’t wait to celebrate this beautiful day with you 💐
+                    </p>
+                  </>
+                )}
+
                 <div className="mt-5 flex justify-center">
                   <div className="w-16 h-[2px] bg-moss/40 rounded-full"></div>
                 </div>
                 <Link
-                  href="components/main" // 👈 change this to your main site path
+                  href="main"
                   className="inline-block mt-3 bg-moss text-white px-6 py-2 rounded-lg hover:bg-olive transition-all"
                 >
                   Go to the Wedding Website →
@@ -363,6 +375,7 @@ const RSVPM = () => {
           </>
         )}
       </AnimatePresence>
+
     </section>
   );
 };
