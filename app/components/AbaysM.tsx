@@ -217,7 +217,7 @@ const AbaysM = () => {
                             </div>
                             {/* ITEM 4 DETAILS */}
                             <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
-                                <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. Michael Collilap<br /><a className='font-greatVibesR '>&</a><br /> Mrs. Robessa Joy Collilap</p>
+                                <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. Michael Colilap<br /><a className='font-greatVibesR '>&</a><br /> Mrs. Robessa Joy Colilap</p>
                                 {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Wife and Mother</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
@@ -298,6 +298,22 @@ const AbaysM = () => {
                             {/* ITEM 9 DETAILS */}
                             <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
                                 <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. Lorenzo Jabrica<br /><a className='font-greatVibesR '>&</a><br />Mrs. Gemma Jabrica</p>
+                                {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Pastor</p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
+                            </div>
+                            {/* ITEM 9.5 */}
+                            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
+                                <Image 
+                                    alt=''
+                                    src={'/pictures/abays/jabrica-molina.jpg'}
+                                    fill
+                                    className='object-cover'
+                                    loading='eager'
+                                />
+                            </div>
+                            {/* ITEM 9.5 DETAILS */}
+                            <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
+                                <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Mr. Bernie Jabrica<br /><a className='font-greatVibesR '>&</a><br />Mrs. Anibell Molina</p>
                                 {/* <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Husband, Father, and Pastor</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p> */}
                             </div>
@@ -488,7 +504,7 @@ const AbaysM = () => {
                             <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
                                 <p className='text-[2rem] pl-3 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Danielle Manalo</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single and Ready to Mingle!</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1400'>"Ang sunshine cutie ng bahay ni Mama Abby"</p>
                             </div>
                             {/* ITEM 4 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
@@ -552,7 +568,7 @@ const AbaysM = () => {
                             <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
                                 <p className='text-[2rem] pl-7 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Zelamae Bartiana</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'>"Rich Tita na takot padin sa teenage pregnancy"</p>
                             </div>
                             {/* ITEM 8 */}
                             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[30rem] pr-[15px] pl-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
@@ -632,7 +648,7 @@ const AbaysM = () => {
                             <div className='bg-amber-50 text-center text-moss grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pr-[15px] pl-[15px] box-border block'>
                                 <p className='text-[2rem] pl-1 mt-[1rem] mb-[1rem] leading-[1.2] overflow-hidden text-ellipsis relative z-2 intersect-once intersect:motion-preset-slide-right motion-duration-1000'>Kate Cedeno</p>
                                 <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>Single but Taken</p>
-                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'></p>
+                                <p className='text-[1.125rem] leading-[1.7] overflow-hidden relative z-2 mt-0 mb-[1rem] box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1000'>"A faithfully forward servant"</p>
                             </div>
                         </div>
                     )}
