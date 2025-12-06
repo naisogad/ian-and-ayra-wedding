@@ -1,60 +1,78 @@
-"use client"
-import Image from 'next/image'
-import React from 'react'
+"use client";
+import React from "react";
+import Image from "next/image";
+import { motion, Variants } from "framer-motion";
 
 const Header = () => {
+  const container: Variants = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const slideLeft: Variants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } },
+  };
+
+  const slideRight: Variants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } },
+  };
+
+  const slideUp: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } },
+  };
 
   return (
-    <section id='top' className='hidden md:block min-h-screen pt-[5.5rem] pb-[2.5rem] mb-[1rem] relative justify-center flex-wrap mr-[15px] ml-[-15px]'>
-        <div className='grow-0 shrink-0 basis-full max-w-full relative w-full min-h-[1px] pr-[15px] pl-[15px] block'>
-            <div className='h-full justify-start flex flex-wrap mr-[-15px] ml-[-15px]'>
-                <div className='grow-0 shrink-0 max-w-full relative w-full min-h-[1px] pr-[15px] pl-[15px] box-border'>
-                    {/* IMAGE ROW 1 */}
-                    <div className='mb-[2rem] min-h-[16rem] flex flex-wrap mr-[-15px] ml-[-15px]'>
-                        <div className='grow-0 shrink-0 basis-[33%] max-w-[33%] relative w-full min-h-[1px] pr-[15px] pl-[15px] block'></div>
-                        {/* IMAGE 1 */}
-                        <div className='grow-0 shrink-0 basis-[58%] max-w-[58%] relative w-full min-h-[1px] pr-[15px] pl-[15px] block h-100 box-border motion-preset-slide-left motion-duration-1000'>
-                            <Image
-                                alt=''
-                                src={'/pictures/photo-1.jpg'}
-                                fill
-                                className='object-cover object-[0%_65%]'
-                            />
-                        </div> 
-                        {/* FLOWER 1    */}
-                        <div className='w-[16rem] h-[19rem] top-[13rem] right-[2rem] absolute z-1 box-border motion-preset-slide-up motion-duration-1000'>
-                            <Image
-                                alt=''
-                                src={'/flowers/floater_1.png'}
-                                fill
-                                className='object-cover'
-                            />
-                        </div>
-                    </div>
-                    {/* TITLE */}
-                    <div className='absolute z-1 top-[10rem] flex flex-wrap mr-[-15px] ml-[15px] box-border motion-preset-slide-right motion-duration-1000'>
-                        <h1 className='text-moss text-[5.6rem] drop-shadow-[3px_2px_rgba(255,255,255)]'>Ayra <a className='font-greatVibesR'>&</a> Ian</h1>
-                    </div>
-                    {/* IMAGE ROW 2 */}
-                    <div className='flex flex-wrap mr-[-15px] ml-[-15px] box-border '>
-                        <div className='h-[300px] grow-0 shrink-0 basis-[16%] max-w-[16%] relative w-full min-h-[1px] pr-[15px] pl-[15px] box-border block motion-preset-slide-up motion-duration-1000'>
-                            {/* WEDDING DATE */}
-                            <p className='text-moss w-[300px] h-[130px] -rotate-90 absolute top-[4rem] left-[-1rem] text-[1.625rem] tracking-[1px] leading-[1.7] mt-[0] mb-[1rem] box-border block space-y-[1em] space-x-[0px]'>November 18, 2025</p>
-                        </div>
-                        {/* IMAGE 2 */}
-                        <div className='shrink-0 basis-[50%] max-w-[50%] relative w-full min-h-[1px] pr-[15px] pl-[15px] box-border block motion-preset-slide-left motion-duration-1000'>
-                            <Image 
-                                alt=''
-                                src={"/pictures/photo-2.jpg"}
-                                fill
-                                className='object-cover'/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  )
-}
+    <section id="home" className="hidden lg:block pt-[10vw] pb-[10vw] relative justify-center flex-wrap">
+      <motion.div className="grow-0 shrink-0 basis-full max-w-full relative w-full min-h-[1px] pr-[1vw] pl-[1vw] block"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
+        <div className="h-full justify-start flex flex-wrap">
+          <div className="grow-0 shrink-0 max-w-full relative w-full min-h-[1px] pr-[1vw] pl-[1vw] box-border">
 
-export default Header
+            {/* IMAGE ROW 1 */}
+            <div className="mb-[2rem] min-h-[16rem] flex flex-wrap">
+              <div className="grow-0 shrink-0 basis-[33%] max-w-[33%] relative w-full min-h-[1px] pr-[1vw] pl-[1vw] block"></div>
+
+              <motion.div variants={slideLeft} className="grow-0 shrink-0 basis-[58%] max-w-[58%] relative w-full min-h-[25vw] pr-[1vw] pl-[1vw] box-border">
+                <Image alt="" src={"/pictures/photo-2.jpg"} fill className="object-cover object-[0%_50%]" />
+              </motion.div>
+
+              <motion.div variants={slideUp} className="w-[15vw] h-[18vw] top-[20vw] right-[0vw] absolute z-1 box-border">
+                <Image alt="" src={"/flowers/floater_1.png"} fill className="object-cover" />
+              </motion.div>
+            </div>
+
+            <motion.div variants={slideRight} className="absolute z-1 top-[11vw] flex flex-wrap box-border">
+              <h1 className="text-moss text-[5vw] drop-shadow-[3px_2px_rgba(255,255,255)]">
+                Ian <a className="font-greatVibesR">&</a> Ayra
+              </h1>
+            </motion.div>
+
+            {/* IMAGE ROW 2 */}
+            <div className="flex flex-wrap box-border">
+              <motion.div variants={slideUp} className="grow-0 shrink-0 basis-[16%] max-w-[16%] relative w-full min-h-[18vw] box-border">
+                <p className="text-moss w-[25vw] h-[8vw] -rotate-90 absolute top-[0vw] left-[0vw] text-[1.6vw] leading-[1.7]">
+                  November 18, 2025
+                </p>
+              </motion.div>
+
+              <motion.div variants={slideLeft} className="shrink-0 basis-[50%] max-w-[50%] relative w-full min-h-[1px] pr-[1vw] pl-[1vw] box-border">
+                <Image alt="" src={"/pictures/photo-1.jpg"} fill className="object-cover" />
+              </motion.div>
+            </div>
+
+          </div>
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Header;

@@ -155,7 +155,7 @@ const RSVPM = () => {
   }, [isDisabled, hasFadedIn]);
 
   return (
-    <section className="min-h-[315px] pb-[1rem] mt-[10rem] relative justify-center flex flex-wrap box-border lg:hidden md:hidden">
+    <section className="min-h-[315px] pb-[1rem] mt-[10rem] relative justify-center flex flex-wrap box-border lg:hidden">
       {/* FLOWER */}
       <div
         id="rsvpM"
@@ -188,7 +188,7 @@ const RSVPM = () => {
                   placeholder="your name here"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.3rem] outline-none appearance-none border-2 ${
+                  className={`bg-white w-[98%] h-[2.5rem] inline-block pl-[1rem] mb-[0.3rem] outline-none appearance-none border-2 ${
                     isAllowed === false
                       ? "border-red-400"
                       : isAllowed === true

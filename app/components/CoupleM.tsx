@@ -1,82 +1,130 @@
 import Image from 'next/image'
 import React from 'react'
+import { motion } from "framer-motion";
 
 const CoupleM = () => {
+
+  const slideLeft = {
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+    };
+
+    const slideRight = {
+        hidden: { opacity: 0, x: 50 },
+        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+    };
+
+    const slideUp = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.2 } },
+    };
+
+    const slideDown = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.2 } },
+    };
+
   return (
-    <section id='coupleM' className='min-h-[503px] pt-[4rem] pb-[6rem] relative justify-center flex flex-wrap box-border mt-[8rem] z-0 lg:hidden md:hidden'>\
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      id='coupleM' className='min-h-[1px] pt-[4em] pb-[6em] relative justify-center flex flex-wrap box-border mt-[8em] z-0 lg:hidden'
+    >
         {/* FLOWER */}
-        <div className='w-[13rem] h-[12rem] top-[-3%] left-[1%] rotate-275 absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-down motion-duration-1000'>
+        <motion.div 
+          variants={slideRight}
+          className='w-[13rem] h-[12rem] top-[-3em] left-[0em] md:left-[2em] rotate-275 absolute z-1 pointer-events-none box-border block'
+        >
             <Image 
                 src={'/flowers/floater_2.png'}
                 alt=''
                 fill
                 className='object-cover'
             />
-        </div>
+        </motion.div>
         {/* TITLE */}
-        <div className='absolute top-0 left-0 z-0 box-border block intersect-once intersect:motion-preset-slide-right motion-duration-1200'>
-            <h2 className='-rotate-90 text-moss relative whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[17rem] left-[-4rem] text-[3.2rem] leading-[0.9]'>The Couple</h2>
-        </div>
+        <motion.div 
+          variants={slideUp}
+          className='absolute z-0 box-border block'
+        >
+            <h2 className='-rotate-90 text-moss relative whitespace-nowrap text-ellipsis z-0 top-[3.5em] md:top-[4em] left-[-3em] md:left-[-4em] text-[3.2em] md:text-[4.2em] leading-[1]'>The Couple</h2>
+        </motion.div>
         {/* IMAGES CONTAINER */}
         <div className='z-0 ml-auto grow-0 shrink-0 basis-[75%] max-w-[75%] min-h-[1px] box-border block'>
           <div className='justify-end flex flex-wrap box-border'>
             {/* IMAGE COLUMN */}
-            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pl-[15px] pr-[5px] box-border block'>
+            <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] box-border block'>
               <div className='flex flex-wrap box-border'>
                 {/* IMAGE 1 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
+                <motion.div 
+                  variants={{ ...slideRight, visible: { ...slideRight.visible, transition: { duration: 1.3 } } }}
+                  className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12em] md:min-h-[16em] pl-[1em] pr-[1em] box-border block'
+                >
                   <Image 
                     src={'/pictures/photo-3.jpg'}
                     alt=''
                     fill
-                    className='object-contain'
+                    className='object-cover md:object-[0%_0%]'
                   />
-                </div>
+                </motion.div>
                 {/* IMAGE 2 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1500'>
+                <motion.div 
+                  variants={{ ...slideRight, visible: { ...slideRight.visible, transition: { duration: 1.6 } } }}
+                  className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12em] md:min-h-[16em] pl-[1em] pr-[1em] box-border block'
+                >
                   <Image 
                     src={'/pictures/photo-4.jpg'}
                     alt=''
                     fill
-                    className='object-contain'
+                    className='object-cover'
                   />
-                </div>
+                </motion.div>
                 {/* IMAGE 3 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-2000'>
+                <motion.div 
+                  variants={{ ...slideRight, visible: { ...slideRight.visible, transition: { duration: 1.9 } } }}
+                  className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12em] md:min-h-[16em] pl-[1em] pr-[1em] box-border block'
+                >
                   <Image 
                     src={'/pictures/photo-5.jpg'}
                     alt=''
                     fill
-                    className='object-contain'
+                    className='object-cover md:object-[0%_10%]'
                   />
-                </div>
+                </motion.div>
                 {/* IMAGE 4 */}
-                <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12rem] pl-[15px] pr-[15px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-2000'>
+                <motion.div 
+                  variants={{ ...slideRight, visible: { ...slideRight.visible, transition: { duration: 2.2 } } }}
+                  className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[12em] md:min-h-[16em] pl-[1em] pr-[1em] box-border block'
+                >
                   <Image 
                     src={'/pictures/photo-6.jpg'}
                     alt=''
                     fill
-                    className='object-contain'
+                    className='object-cover md:object-[0%_0%]'
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
             {/* CONTENT COLUMN */}
-            <div className='z-0 ml-auto grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-full min-h-[1px] pl-[15px] pr-[5px] box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1000'>
+            <div className='z-0 ml-auto grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-full min-h-[1px] box-border block'>
                 {/* MESSAGE */}
                 <div className='justify-end flex flex-wrap box-border'>
-                    <div className='ml-auto grow-0 shrink-0 basis-[100%] max-w-[100%] pl-[15px] pr-[5px] box-border block bg-amber-50'>
-                        <div className='text-[1.125rem] leading-[1.5] text-moss box-border block'>
-                            <p className='mt-[0.5rem] mb-[1rem] text-[1.125rem] leading-[1.5] break-normal overflow-hidden relative z-0 text-moss text-left box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1200'>By God's loving design, we have been brought together, each reflecting His grace in unique ways. <br /> </p>
-                            <p className='mt-[0.5rem] mb-[1rem] text-[1.125rem] leading-[1.5] break-normal overflow-hidden relative z-0 text-moss text-left box-border block intersect-once intersect:motion-preset-slide-left motion-duration-1800'>As we step into the sacred covenant of marriage, our hearts overflow with gratitude to God for guiding our paths and weaving our beautiful story. We give Him all the glory for the love we share and the life we are building together.</p>
-                            <p className='mt-[0.5rem] whitespace-normal text-clip break-words relative z-2 text-left mb-[1rem] box-border block font-semibold intersect-once intersect:motion-preset-slide-left motion-duration-2000'>- Ian & Ayra</p>
+                    <motion.div 
+                      variants={slideRight}
+                      className='ml-auto grow-0 shrink-0 basis-[100%] max-w-[100%] pl-[1em] pr-[1em] box-border block bg-amber-50'
+                    >
+                        <div className='text-[1.125em] leading-[1.5] text-moss box-border block'>
+                            <p className='mt-[0.5em] mb-[1em] break-normal overflow-hidden relative z-0 text-moss text-left box-border block'>By God's loving design, we have been brought together, each reflecting His grace in unique ways. <br /> </p>
+                            <p className='mt-[0.5em] mb-[1em] break-normal overflow-hidden relative z-0 text-moss text-left box-border block'>As we step into the sacred covenant of marriage, our hearts overflow with gratitude to God for guiding our paths and weaving our beautiful story. We give Him all the glory for the love we share and the life we are building together.</p>
+                            <p className='mt-[0.5em] whitespace-normal text-clip break-words relative z-2 text-left mb-[1em] box-border block font-semibold'>- Ian & Ayra</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
           </div>
         </div>
-    </section>
+    </motion.section>
   )
 }
 
