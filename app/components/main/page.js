@@ -82,7 +82,7 @@ export default function Home() {
     </div>
     
     <div className="block lg:hidden">
-      <div className="mr-auto ml-auto w-full h-full 2x1:max-w-[1510px] xl:max-w-[1220px] lg:max-w-[984px] md:max-w-[720px] sm:max-w-[640px]">
+      <div className="mr-auto ml-auto w-full h-full 2x1:max-w-[1510px] xl:max-w-[1220px] lg:max-w-[984px] md:max-w-[720px] sm:max-w-[640px] overflow-x-hidden">
         <HeaderM/>
         <AboutM />
         <CoupleM />
