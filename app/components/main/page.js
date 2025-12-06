@@ -66,30 +66,36 @@ export default function Home() {
     <>
     <ObserverProvider>
     <Navbar />
-    <div className="mr-auto ml-auto w-full 2x1:max-w-[80vw] xl:max-w-[80vw] lg:max-w-[80vw] md:max-w-[80vw] sm:max-w-[80vw]">
-      <Header/>
-      <About />
-      <Couple />
-      <Abays />
-      <Schedule />
-      <Theme />
-      <Gallery />
-      <RSVP />
-      <Gift />
-      <FAQs />
+    <div className="hidden lg:block">
+      <div className="mr-auto ml-auto w-full 2x1:max-w-[80vw] xl:max-w-[80vw] lg:max-w-[80vw] md:max-w-[80vw] sm:max-w-[80vw]">
+        <Header/>
+        <About />
+        <Couple />
+        <Abays />
+        <Schedule />
+        <Theme />
+        <Gallery />
+        <RSVP />
+        <Gift />
+        <FAQs />
+      </div>
     </div>
-    <div className="mr-auto ml-auto w-full h-full 2x1:max-w-[1510px] xl:max-w-[1220px] lg:max-w-[984px] md:max-w-[720px] sm:max-w-[640px] overflow-x-hidden">
-      <HeaderM/>
-      <AboutM />
-      <CoupleM />
-      <AbaysM />
-      <ScheduleM />
-      <ThemeM />
-      <GalleryM />
-      <RSVPM />
-      <GiftM />
-      <FAQsM />
+    
+    <div className="block lg:hidden">
+      <div className="mr-auto ml-auto w-full h-full 2x1:max-w-[1510px] xl:max-w-[1220px] lg:max-w-[984px] md:max-w-[720px] sm:max-w-[640px]">
+        <HeaderM/>
+        <AboutM />
+        <CoupleM />
+        <AbaysM />
+        <ScheduleM />
+        <ThemeM />
+        <GalleryM />
+        <RSVPM />
+        <GiftM />
+        <FAQsM />
+      </div>
     </div>
+    
     </ObserverProvider>
     </>
   );
