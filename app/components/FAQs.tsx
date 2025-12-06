@@ -38,12 +38,12 @@ const FAQs = () => {
                 />
             </div>
             {/* CONTENT */}
-            <div className='justify-around flex flex-wrap box-border'>
+            <div className='justify-center flex flex-wrap box-border'>
                 {/* LEFT CONTAINER */}
-                <div className='grow-0 shrink-0 basis-[33%] min-w-[33%] relative w-full min-h-[1px] pr-[1vw] pl-[1vw] box-border block'>
+                <div className='grow-0 shrink-0 basis-[20%] min-w-[20%] relative w-full min-h-[1px] pr-[1vw] pl-[1vw] box-border block'>
                     {/* TITLE */}
                     <div className='box-border block relative'>
-                        <h2 className='text-moss text-[5vw] absolute leading-[1.1] -rotate-90 top-[10vw] left-[7vw]'>FAQs</h2>
+                        <h2 className='text-moss text-[5vw] absolute leading-[1.1] -rotate-90 top-[10vw] left-[0vw]'>FAQs</h2>
                     </div>
                 </div>
                 {/* RIGHT CONTAINER */}
