@@ -35,7 +35,7 @@ const AboutM = () => {
             variants={slideUp}
             className='absolute z-1 box-border block'
         >
-            <h2 className='text-moss relative -rotate-90 whitespace-nowrap z-2 text-ellipsis top-[4em] md:top-[2em] left-[-0.5em] md:left-[-0.5em] text-[2.4em] md:text-[4.2em] leading-[1] text-right box-border block'>Welcome</h2>
+            <h2 className='text-moss relative -rotate-90 whitespace-nowrap z-2 text-ellipsis top-[3em] md:top-[2em] left-[-0.5em] md:left-[-0.5em] text-[2.4em] md:text-[4.2em] leading-[1] text-right box-border block'>Welcome</h2>
         </motion.div>
         {/* CONTAINER */}
         <div className='z-1 ml-auto grow-0 shrink-0 basis-[70%] max-w-[70%] relative w-full min-h-[1px] box-border block'>

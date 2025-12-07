@@ -47,7 +47,7 @@ const PhotosM = () => {
                 />
             </div>
             {showIndicator && (
-              <div className='w-[11em] h-[11em] top-[35em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11em] h-[11em] top-[13%] left-[5%] md:left-[20%] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/tap&slide.png'}
                       alt=''
@@ -58,7 +58,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[116em] md:top-[105em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11rem] h-[12rem] top-[44%] left-[5%] md:left-[20%] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -69,7 +69,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[190em] md:top-[165em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11rem] h-[12rem] top-[71%] md:top-[70%] left-[5%] md:left-[20%] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -80,7 +80,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[82%] md:top-[80%] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11rem] h-[12rem] top-[82%] md:top-[81%] left-[5%] md:left-[20%] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -91,7 +91,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[94%] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
+              <div className='w-[11rem] h-[12rem] top-[94%] left-[5%] md:left-[20%] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
