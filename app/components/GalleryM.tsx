@@ -38,7 +38,7 @@ const PhotosM = () => {
   return (
         <section id='galleryM' className='min-h-[px] pt-[6em] pb-[6em] relative flex flex-wrap box-border mt-[6em] z-0 lg:hidden'>
             {/* FLOWER */}
-            <div className='w-[8em] md:w-[12em] h-[10em] md:h-[14em] top-[-1em] md:top-[-5em] right-[1em] rotate-275 absolute z-1 pointer-events-none box-border block'>
+            <div className='w-[8em] md:w-[12em] h-[10em] md:h-[14em] top-[-1em] md:top-[-5em] right-[0em] rotate-275 absolute z-1 pointer-events-none box-border block'>
                 <Image 
                     src={'/flowers/floater_6.png'}
                     alt=''

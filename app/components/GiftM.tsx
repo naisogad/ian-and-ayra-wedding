@@ -33,7 +33,7 @@ const GiftM = () => {
       className="min-h-[1px] pt-[6em] pb-[6em] mt-[4em] relative flex flex-wrap box-border lg:hidden"
     >
       {/* Decorative Flower */}
-      <div className="w-[8em] md:w-[12em] h-[8em] md:h-[12em] top-[1.5em] md:top-[-1.8em] right-[0em] absolute z-1 pointer-events-none box-border block">
+      <div className="w-[8em] md:w-[12em] h-[8em] md:h-[12em] top-[1.5em] md:top-[-1.8em] right-[-1.3em] absolute z-1 pointer-events-none box-border block">
         <Image alt="" 
           src="/flowers/floater_5.png" 
           fill 

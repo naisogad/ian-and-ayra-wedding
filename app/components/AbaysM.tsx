@@ -68,7 +68,7 @@ const AbaysM = () => {
         {/* FLOWER 1 */}
         <motion.div 
             variants={slideRight}
-            className='w-[10em] md:w-[15em] h-[7em] md:h-[10em] top-[3%] md:top-[-3%] right-[0%] absolute z-1 pointer-events-none box-border block'
+            className='w-[10em] md:w-[15em] h-[7em] md:h-[10em] top-[3%] md:top-[-3%] right-[-0.5em] absolute z-1 pointer-events-none box-border block'
         >
             <Image 
                 alt=''
