@@ -29,7 +29,7 @@ const Gift = () => {
 
   return (
     <section
-      id="giftGM"
+      id="gift"
       className="hidden lg:flex pt-[10vw] pb-[10vw] relative justify-center flex-wrap box-border"
     >
       {/* Decorative Flower */}

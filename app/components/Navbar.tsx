@@ -18,7 +18,7 @@ const Navbar = () => {
         <h4 className='hidden lg:block fixed rotate-90 font-georgia z-4 top-[2.5vw] right-0 cursor-pointer text-[1.3vw] uppercase text-moss' onClick={toggleNav}>Menu</h4>
         {/* MOBILE BUTTON */}
         <div className='w-screen h-12 top-0 fixed z-4 block lg:hidden'>
-          <button className='space-y-1 relative left-[24.5em] md:left-[45.5em] top-[30%] box-border block lg:hidden' onClick={toggleNav}>
+          <button className='space-y-1 relative left-[90%] md:left-[95%] top-[30%] box-border block lg:hidden' onClick={toggleNav}>
             <span className={`block h-1 w-7 bg-moss transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1) ${toggleMenu? 'rotate-45 translate-y-3': ''}`}></span>
             <span className={`block h-1 w-7 bg-moss transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1) ${toggleMenu? 'scale-0 opacity-0': ''}`}></span>
             <span className={`block h-1 w-7 bg-moss transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1) ${toggleMenu? '-rotate-45 -translate-y-1': ''}`}></span>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#theme">Wedding Attire</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#gallery">Our Story</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvp">RSVP</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#giftG">Gift Guide</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#gift">Gift Guide</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#faqs">FAQs</a></li>
           </ul>
         </div>
@@ -47,8 +47,8 @@ const Navbar = () => {
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#scheduleM">Timeline</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#themeM">Wedding Attire</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#galleryM">Our Story</a></li>
-            {/* <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvpM">RSVP</a></li> */}
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#giftGM">Gift Guide</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvpM">RSVP</a></li>
+            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#giftM">Gift Guide</a></li>
             <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#faqsM">FAQs</a></li>
           </ul>
         </div>

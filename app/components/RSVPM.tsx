@@ -155,18 +155,22 @@ const RSVPM = () => {
   }, [isDisabled, hasFadedIn]);
 
   return (
-    <section className="min-h-[315px] pb-[1rem] mt-[10rem] relative justify-center flex flex-wrap box-border lg:hidden">
+    <section className="min-h-[1px] pb-[1rem] mt-[10rem] relative flex flex-wrap box-border lg:hidden">
       {/* FLOWER */}
       <div
         id="rsvpM"
-        className="w-[12rem] h-[16rem] top-[-9rem] left-[20%] rotate-275 absolute z-1 pointer-events-none box-border block intersect-once intersect:motion-preset-slide-down motion-duration-1000"
+        className="w-[8rem] md:w-[12rem] h-[12rem] md:h-[16rem] top-[-7em] md:top-[-9em] left-[5em] md:left-[10em] rotate-275 absolute z-1 pointer-events-none box-border block"
       >
-        <Image src={"/flowers/floater_7.png"} alt="" fill className="object-cover" />
+        <Image src={"/flowers/floater_7.png"} 
+          alt="" 
+          fill 
+          className="object-cover" 
+        />
       </div>
 
       {/* TITLE */}
-      <div className="box-border absolute top-0 left-0 z-0 block intersect-once intersect:motion-preset-slide-right motion-duration-1000">
-        <h2 className="-rotate-90 relative margin-0 whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[8rem] left-[-2.7rem] text-[3.2rem] leading-[0.9] text-moss">
+      <div className="box-border absolute z-0 block">
+        <h2 className="-rotate-90 relative margin-0 whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[3em] md:top-[2.5em] left-[-0.6em] md:left-[-0.5em] text-[2.4em] md:text-[4.2em] leading-[0.9] text-moss">
           RSVP
         </h2>
       </div>
@@ -180,7 +184,7 @@ const RSVPM = () => {
               className="mr-auto ml-auto pl-[15px] pr-[15px] w-[100%] box-border block h-auto mb-[4rem] relative"
             >
               {/* NAME */}
-              <div className="text-left font-georgia text-moss pt-[1.5rem] mb-[1.5em] relative box-border text-[1.125rem] leading-[1.7]">
+              <div className="text-left font-georgia text-moss pt-[1.5rem] mb-[1.5em] relative box-border text-[0.9em] md:text-[1.125em] leading-[1.7]">
                 <span>I,</span>
                 <input
                   type="text"
@@ -188,7 +192,7 @@ const RSVPM = () => {
                   placeholder="your name here"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`bg-white w-[98%] h-[2.5rem] inline-block pl-[1rem] mb-[0.3rem] outline-none appearance-none border-2 ${
+                  className={`bg-white w-[97%] md:w-[98%] h-[2.2em] md:h-[2.3em] inline-block pl-[0.8em] md:pl-[1em] mb-[0.3rem] outline-none appearance-none border-2 ${
                     isAllowed === false
                       ? "border-red-400"
                       : isAllowed === true
@@ -214,7 +218,7 @@ const RSVPM = () => {
                         initial={{ opacity: 0, y: 5 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -5 }}
-                        className="text-moss text-[1.125rem] pt-0 pb-5 flex items-center gap-2"
+                        className="text-moss text-[0.9em] md:text-[1.125em] pt-0 pb-5 flex items-center gap-2"
                       >
                         <span className="inline-block w-4 h-4 border-2 border-moss rounded-full border-t-transparent animate-spin"></span>
                         Checking guest list...
@@ -227,7 +231,7 @@ const RSVPM = () => {
                         initial={{ opacity: 0, y: 5 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -5 }}
-                        className="text-moss font-medium text-[1.125rem] flex items-center gap-2 bg-green-50/60 p-3 rounded-lg border border-green-200"
+                        className="text-moss font-medium text-[0.9em] md:text-[1.125em] flex items-center gap-2 bg-green-50/60 p-3 rounded-lg border border-green-200"
                       >
                         <span className="text-green-600 text-xl">🌾</span>
                         Welcome! You’re on the guest list.
@@ -240,13 +244,13 @@ const RSVPM = () => {
                         initial={{ opacity: 0, y: 5 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -5 }}
-                        className="text-red-500 text-[1.125rem] flex flex-col items-start bg-red-50/60 p-3 rounded-lg border border-red-200"
+                        className="text-red-500 text-[0.9em] md:text-[1.125em] flex flex-col items-start bg-red-50/60 p-3 rounded-lg border border-red-200"
                       >
                         <div className="flex items-center gap-2">
-                          <span className="text-[1.125rem] ">🌺</span>
+                          <span className="text-[0.9em] md:text-[1.125em] ">🌺</span>
                           <span>We couldn’t find your name on the guest list.</span>
                         </div>
-                        <p className="text-moss mt-2 ml-7 text-[1.125rem] italic">
+                        <p className="text-moss mt-2 ml-7 text-[0.9em] md:text-[1.125em] italic">
                           Kindly reach out to the couple for assistance.
                         </p>
                       </motion.div>
@@ -258,7 +262,7 @@ const RSVPM = () => {
                         initial={{ opacity: 0, y: 5 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -5 }}
-                        className="text-moss text-[1.125rem] bg-green-50/60 p-3 rounded-lg border border-green-200"
+                        className="text-moss text-[0.9em] md:text-[1em] bg-green-50/60 p-3 rounded-lg border border-green-200"
                       >
                         {message || "Please type your name to start 💌"}
                       </motion.p>
@@ -267,7 +271,7 @@ const RSVPM = () => {
                 </div>
               </div>
               {/* EMAIL + MOBILE */}
-              <div className="text-left font-georgia text-moss pb-[1.5em] relative box-border text-[1.125rem] leading-[1.7]">
+              <div className="text-left font-georgia text-moss pb-[1.5em] relative box-border text-[0.9em] md:text-[1.125em] leading-[1.7]">
                 <span>You can contact and bring me more info at:</span>
                 <input
                   type="email"
@@ -276,7 +280,7 @@ const RSVPM = () => {
                   value={formData.email}
                   onChange={handleChange}
                   disabled={!isAllowed}
-                  className="bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
+                  className="bg-white w-[97%] h-[2.2em] md:h-[2.3em] inline-block pl-[0.8em] md:pl-[1em] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
                 />
                 <input
                   type="tel"
@@ -286,7 +290,7 @@ const RSVPM = () => {
                   value={formData.mobile}
                   onChange={handleChange}
                   disabled={!isAllowed}
-                  className="bg-white w-[97%] h-[2.5rem] inline-block pl-[1rem] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
+                  className="bg-white w-[97%] h-[2.2em] md:h-[2.3em] inline-block pl-[0.8em] md:pl-[1em] mb-[0.5rem] outline-none appearance-none border-2 border-shadow"
                 />
               </div>
 
@@ -294,7 +298,7 @@ const RSVPM = () => {
               <button
                 type="submit"
                 disabled={isDisabled}
-                className={`p-[0.5rem] text-center block w-[98%] border border-shadow text-[1.125rem] leading-[1.7] font-georgia box-border focus:outline-none focus:ring-2 focus:ring-moss focus:border-moss transition-all duration-300 rounded-xl
+                className={`p-[0.5rem] text-center block w-[98%] border border-shadow text-[0.9em] md:text-[1.125em] leading-[1.7] font-georgia box-border focus:outline-none focus:ring-2 focus:ring-moss focus:border-moss transition-all duration-300 rounded-xl
                 ${
                   isDisabled
                     ? "bg-gray-300 text-gray-600 cursor-not-allowed opacity-80"

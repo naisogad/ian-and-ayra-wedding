@@ -36,9 +36,9 @@ const PhotosM = () => {
   }, [hasStarted]);
 
   return (
-        <section id='galleryM' className='min-h-[px] pt-[6em] pb-[6em] relative justify-center flex flex-wrap box-border mt-[6em] z-0 lg:hidden'>
+        <section id='galleryM' className='min-h-[px] pt-[6em] pb-[6em] relative flex flex-wrap box-border mt-[6em] z-0 lg:hidden'>
             {/* FLOWER */}
-            <div className='w-[12em] h-[14em] top-[-5em] right-[0em] rotate-275 absolute z-1 pointer-events-none box-border block'>
+            <div className='w-[8em] md:w-[12em] h-[10em] md:h-[14em] top-[-1em] md:top-[-5em] right-[0em] rotate-275 absolute z-1 pointer-events-none box-border block'>
                 <Image 
                     src={'/flowers/floater_6.png'}
                     alt=''
@@ -47,7 +47,7 @@ const PhotosM = () => {
                 />
             </div>
             {showIndicator && (
-              <div className='w-[11em] h-[11em] top-[35em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border block'>
+              <div className='w-[11em] h-[11em] top-[35em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border block motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/tap&slide.png'}
                       alt=''
@@ -58,7 +58,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[116em] md:top-[105em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border'>
+              <div className='w-[11rem] h-[12rem] top-[116em] md:top-[105em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -69,7 +69,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[190em] md:top-[165em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border'>
+              <div className='w-[11rem] h-[12rem] top-[190em] md:top-[165em] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -80,7 +80,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[82%] md:top-[80%] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border'>
+              <div className='w-[11rem] h-[12rem] top-[82%] md:top-[80%] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -91,7 +91,7 @@ const PhotosM = () => {
               </div>
             )}
             {showIndicator && (
-              <div className='w-[11rem] h-[12rem] top-[94%] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border'>
+              <div className='w-[11rem] h-[12rem] top-[94%] left-[3em] md:left-[9em] absolute z-1 pointer-events-none box-border motion-preset-oscillate motion-duration-1300'>
                   <Image 
                       src={'/pictures/slideme.png'}
                       alt=''
@@ -103,7 +103,7 @@ const PhotosM = () => {
             )}
             {/* TITLE */}
             <div className='absolute z-0 box-border block'>
-                <h2 className='text-moss -rotate-90 relative whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[4.8em] left-[-2.8em] md:left-[-4.2em] text-[3.2em] md:text-[4em] leading-[0.9]'>Our Story</h2>
+                <h2 className='text-moss -rotate-90 relative whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[4.8em] left-[-1em] md:left-[-1em] text-[2.4em] md:text-[4.2em] leading-[0.9]'>Our Story</h2>
             </div>
             {/* IMAGES CONTAINER */}
             <div className='z-0 ml-auto grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] max-h-[95rem] box-border'>
@@ -112,7 +112,7 @@ const PhotosM = () => {
                 <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] pl-[1em] pr-[1em] bg-amber-50 box-border block'>
                   {/* TITLE */}
                   <div className='box-border block pl-[1em] pr-[1em] pt-[2.5em]'>
-                    <p className='text-moss text-[2em] leading-[1] text-center font-medium'>How It All Began</p>
+                    <p className='text-moss text-[1.5rem] md:text-[2em] leading-[1] text-center font-medium'>How It All Began</p>
                   </div>
                   <div className='flex box-border pb-[2em] overflow-x-auto snap-x snap-mandatory snap-center'>
                      <div className='relative cursor-pointer'><ImageFlip frontImageSrc={'/pictures/transition/couple-1.jpg'} backContent={<p className="text-moss p-4"><a className='font-bold'> June 16, 2024 –</a><br /><br />Unang bulaklak na natanggap mo sakin…<br />gusto mo ng flowers.<br />May nag f-fund raising na student, pinabili mo ako.</p>} height={500} width={300}/></div>
@@ -154,11 +154,11 @@ const PhotosM = () => {
             <div className='bg-amber-50 z-0 ml-auto pt-[1em] grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] box-border block overflow-y-auto overflow-x-hidden'>
               {/* TITLE */}
               <div className='box-border block pl-[1em] pr-[1em] pb-[0rem]'>
-                <p className='text-moss text-[2em] leading-[1] text-center font-medium'>The Proposal</p>
+                <p className='text-moss text-[1.5rem] md:text-[2em] leading-[1] text-center font-medium'>The Proposal</p>
               </div>
               {/* DETAIL */}
               <div className='box-border block text-left pl-[1em] pr-[1em] mt-[2.5em] mb-[2.5em]'>
-                <p className='text-moss text-[1.125em]'>Date: March 22, 2025<br /><br />
+                <p className='text-moss text-[0.9em] md:text-[1.125em]'>Date: March 22, 2025<br /><br />
                   <a className='font-bold'>💍 “A Love Written by Grace”</a><br /><br />Every chapter of our story has been guided by God’s hand — just as Ruth found favor in the fields of Boaz, we found grace in each other’s hearts. This proposal is more than a milestone; it’s a testament to patience, prayer, and divine orchestration. Through this video and the moments captured in every frame, we celebrate not only our love, but the faithfulness of the One who brought us together in His perfect time.
                   </p>
               </div>
@@ -192,16 +192,16 @@ const PhotosM = () => {
             <div className='bg-amber-50 z-0 ml-auto pt-[1em] mb-[1em] grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] box-border block overflow-y-hidden'>
               {/* TITLE */}
               <div className='box-border block pl-[1em] pr-[1em]'>
-                <p className='text-moss text-[2em] leading-[1] text-center font-medium'>Moments Before 'I Do'</p>
+                <p className='text-moss text-[1.5rem] md:text-[2em] leading-[1] text-center font-medium'>Moments Before 'I Do'</p>
               </div>
               {/* DETAIL */}
               <div className='box-border block text-left pl-[1em] pr-[1em] mt-[2.5em] mb-[2.5em]'>
-                <p className='text-moss text-[1.125em]'>Date: October 10, 2025<br /><br />
+                <p className='text-moss text-[0.9em] md:text-[1.125em]'>Date: October 10, 2025<br /><br />
                   <a className='font-bold'>🌸 “Grace in Every Frame”</a><br /><br />Our prenup isn’t just a photoshoot — it’s a reflection of grace. Inspired by the story of Ruth and Boaz, we wanted to capture love that’s pure, intentional, and grounded in faith. Behind every smile is gratitude for the waiting season, and behind every embrace is the joy of finding home in each other. This is our glimpse of forever — a celebration of love authored by God Himself.
                 </p>
               </div>
               <div className='box-border block pl-[1em] pr-[1em]'>
-                <p className='text-moss text-[2em] leading-[1] text-center font-medium'>Set 1</p>
+                <p className='text-moss text-[1.5rem] md:text-[2em] leading-[1] text-center font-medium'>Set 1</p>
               </div>
               <div className='flex box-border overflow-x-auto'>
                 <div className='relative cursor-pointer'> <ImageC frontImageSrc={'/pictures/prenup/I + A-18.jpg'} height={500} width={300}/></div>
@@ -279,7 +279,7 @@ const PhotosM = () => {
                 <div className='relative cursor-pointer'> <ImageC frontImageSrc={'/pictures/prenup/I + A-121.jpg'} height={500} width={300}/></div>
               </div>
               <div className='box-border block pl-[1em] pr-[1em] mt-[1em]'>
-                <p className='text-moss text-[2em] leading-[1] text-center font-medium'>Set 2</p>
+                <p className='text-moss text-[1.5rem] md:text-[2em] leading-[1] text-center font-medium'>Set 2</p>
               </div>
               <div className='flex box-border overflow-x-auto'>
                 <div className='relative cursor-pointer'> <ImageC frontImageSrc={'/pictures/prenup/I + A-154.jpg'} height={500} width={300}/></div>
@@ -354,7 +354,7 @@ const PhotosM = () => {
                 <div className='relative cursor-pointer'> <ImageC frontImageSrc={'/pictures/prenup/I + A-265.jpg'} height={500} width={300}/></div>
               </div>
                             <div className='box-border block pl-[1em] pr-[1em] mt-[1em]'>
-                <p className='text-moss text-[2rem] leading-[1] text-center font-medium'>Set 3</p>
+                <p className='text-moss text-[1.5rem] md:text-[2em] leading-[1] text-center font-medium'>Set 3</p>
               </div>
               <div className='flex box-border overflow-x-auto'>
                 <div className='relative cursor-pointer'> <ImageC frontImageSrc={'/pictures/prenup/I + A-298.jpg'} height={500} width={300}/></div>

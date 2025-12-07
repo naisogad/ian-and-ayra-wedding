@@ -29,12 +29,19 @@ const CoupleM = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      id='coupleM' className='min-h-[1px] pt-[4em] pb-[6em] relative justify-center flex flex-wrap box-border mt-[8em] z-0 lg:hidden'
+      id='coupleM' className='min-h-[1px] pt-[4em] pb-[6em] relative flex flex-wrap box-border mt-[8em] z-0 lg:hidden'
     >
+        {/* TITLE */}
+        <motion.div 
+          variants={slideUp}
+          className='absolute z-0 box-border block'
+        >
+            <h2 className='-rotate-90 text-moss relative whitespace-nowrap text-ellipsis z-0 top-[4em] md:top-[4em] left-[-1.2em] md:left-[-1em] text-[2.4em] md:text-[4.2em] leading-[1]'>The Couple</h2>
+        </motion.div>
         {/* FLOWER */}
         <motion.div 
           variants={slideRight}
-          className='w-[13rem] h-[12rem] top-[-3em] left-[0em] md:left-[2em] rotate-275 absolute z-1 pointer-events-none box-border block'
+          className='w-[9rem] md:w-[14rem] h-[8rem] md:h-[13rem] top-[-1em] left-[1.5em] md:left-[5em] rotate-275 absolute z-1 pointer-events-none box-border block'
         >
             <Image 
                 src={'/flowers/floater_2.png'}
@@ -43,15 +50,8 @@ const CoupleM = () => {
                 className='object-cover'
             />
         </motion.div>
-        {/* TITLE */}
-        <motion.div 
-          variants={slideUp}
-          className='absolute z-0 box-border block'
-        >
-            <h2 className='-rotate-90 text-moss relative whitespace-nowrap text-ellipsis z-0 top-[3.5em] md:top-[4em] left-[-3em] md:left-[-4em] text-[3.2em] md:text-[4.2em] leading-[1]'>The Couple</h2>
-        </motion.div>
         {/* IMAGES CONTAINER */}
-        <div className='z-0 ml-auto grow-0 shrink-0 basis-[75%] max-w-[75%] min-h-[1px] box-border block'>
+        <div className='z-0 ml-auto grow-0 shrink-0 basis-[70%] max-w-[70%] min-h-[1px] box-border block'>
           <div className='justify-end flex flex-wrap box-border'>
             {/* IMAGE COLUMN */}
             <div className='grow-0 shrink-0 basis-[100%] max-w-[100%] relative w-[100%] min-h-[1px] box-border block'>
@@ -114,7 +114,7 @@ const CoupleM = () => {
                       variants={slideRight}
                       className='ml-auto grow-0 shrink-0 basis-[100%] max-w-[100%] pl-[1em] pr-[1em] box-border block bg-amber-50'
                     >
-                        <div className='text-[1.125em] leading-[1.5] text-moss box-border block'>
+                        <div className='text-[0.9em] md:text-[1.125em] leading-[1.5] text-moss box-border block'>
                             <p className='mt-[0.5em] mb-[1em] break-normal overflow-hidden relative z-0 text-moss text-left box-border block'>By God's loving design, we have been brought together, each reflecting His grace in unique ways. <br /> </p>
                             <p className='mt-[0.5em] mb-[1em] break-normal overflow-hidden relative z-0 text-moss text-left box-border block'>As we step into the sacred covenant of marriage, our hearts overflow with gratitude to God for guiding our paths and weaving our beautiful story. We give Him all the glory for the love we share and the life we are building together.</p>
                             <p className='mt-[0.5em] whitespace-normal text-clip break-words relative z-2 text-left mb-[1em] box-border block font-semibold'>- Ian & Ayra</p>

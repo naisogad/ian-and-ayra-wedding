@@ -27,7 +27,7 @@ const HeaderM = () => {
 
   return (
     <section
-      id="home"
+      id="homeM"
       className="pb-[15em] pt-[6em] md:pt-[4em] relative justify-center flex flex-wrap box-border lg:hidden"
     >
       <div className="h-auto z-1 relative w-screen box-border block">
@@ -53,7 +53,7 @@ const HeaderM = () => {
           animate="visible"
           className="relative w-screen mt-[5em] box-border block break-words text-right"
         >
-          <p className="top-[3.3em] left-[-2em] block text-[1.4em] text-moss transform -rotate-90 absolute z-2 mb-[1em] break-words text-right md:left-[-0.5em] md:text-[1.8em] md:top-[3.4em]">
+          <p className="top-[3em] left-[-2.5em] block text-[1.4em] text-moss transform -rotate-90 absolute z-2 mb-[1em] break-words text-right md:left-[-0.5em] md:text-[1.8em] md:top-[3.4em]">
             November 18, 2025
           </p>
         </motion.div>
@@ -78,7 +78,7 @@ const HeaderM = () => {
           variants={{ ...slideUp, visible: { ...slideUp.visible, transition: { duration: 2.2 } } }}
           initial="hidden"
           animate="visible"
-          className="w-[11em] h-[14em] bottom-[5em] left-[13em] relative z-1 box-border md:left-[35em]"
+          className="w-[8em] h-[10em] bottom-[10%] left-[60%] relative z-1 box-border md:left-[65%] md:w-[12em] md:h-[14em] "
         >
           <Image
             alt=""

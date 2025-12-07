@@ -29,17 +29,21 @@ const GiftM = () => {
 
   return (
     <section
-      id="giftGM"
-      className="min-h-[1px] pt-[6em] pb-[6em] mt-[4em] relative justify-center flex flex-wrap box-border lg:hidden"
+      id="giftM"
+      className="min-h-[1px] pt-[6em] pb-[6em] mt-[4em] relative flex flex-wrap box-border lg:hidden"
     >
       {/* Decorative Flower */}
-      <div className="w-[12em] h-[12em] top-[-7%] right-[-2em] absolute z-1 pointer-events-none box-border block">
-        <Image alt="" src="/flowers/floater_5.png" fill className="object-cover" />
+      <div className="w-[8em] md:w-[12em] h-[8em] md:h-[12em] top-[1.5em] md:top-[-1.8em] right-[0em] absolute z-1 pointer-events-none box-border block">
+        <Image alt="" 
+          src="/flowers/floater_5.png" 
+          fill 
+          className="object-cover" 
+        />
       </div>
 
       {/* Title */}
       <div className="absolute z-0 box-border block">
-        <h2 className="text-moss -rotate-90 relative whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[3.2em] md:top-[2.2em] left-[-2.8em] md:left-[-4.2em] text-[3.2em] md:text-[4em] leading-[0.9]">
+        <h2 className="text-moss -rotate-90 relative whitespace-nowrap text-ellipsis z-0 pb-[0.5rem] top-[3.5em] md:top-[2.1em] left-[-1em] md:left-[-1em] text-[2.4em] md:text-[4.2em] leading-[0.9]">
           Gift Guide
         </h2>
       </div>
@@ -54,7 +58,7 @@ const GiftM = () => {
             
             {/* Paragraph */}
             <div className="box-border block text-left px-[1em] mb-[2em]">
-              <p className="text-moss text-[1.125em]">
+              <p className="text-moss text-[0.9em] md:text-[1.125em]">
                 Your presence at our wedding is already the greatest gift we could ask for. ✨ <br />
                 <br />
                 But if you wish to bless us in another way, we’ve prepared a simple way to share your love through a monetary gift — a seed we’ll cherish as we build our life together. 🌾
@@ -65,7 +69,7 @@ const GiftM = () => {
             <div className="text-center">
               <button
                 onClick={() => setShowModal(true)}
-                className="bg-moss font-georgia text-white px-[1em] py-[0.4em] rounded-full text-[1.2em] shadow-md hover:bg-moss/90 transition-all duration-300"
+                className="bg-moss font-georgia text-white px-[1em] py-[0.4em] rounded-full text-[1em] md:text-[1.2em] shadow-md hover:bg-moss/90 transition-all duration-300"
               >
                 See Gift Details
               </button>
@@ -100,16 +104,16 @@ const GiftM = () => {
                 className="bg-white/90 backdrop-blur-md border border-moss/20 shadow-2xl rounded-2xl max-w-[90%] w-[22em] max-h-[85vh] overflow-y-auto p-[1em] relative text-center scrollbar-thin scrollbar-thumb-moss/40 scrollbar-track-transparent"
                 onClick={(e) => e.stopPropagation()}
               >
-                <h3 className="text-moss text-[1.6em] mb-[0.6em] font-georgia font-semibold">
+                <h3 className="text-moss text-[1.2em] md:text-[1.4em] mb-[0.6em] font-georgia font-semibold">
                   Seeds of Blessing 🌱
                 </h3>
 
-                <p className="text-moss text-[1.125em] text-center mb-[0.6em]">
+                <p className="text-moss text-[0.9em] md:text-[1.125em] text-center mb-[0.6em]">
                   You may send your love and blessing through:
                 </p>
 
                 <div className="text-center">
-                  <p className="text-moss text-[1.125em] mb-[0.4em]">
+                  <p className="text-moss text-[0.9em] md:text-[1.125em] mb-[0.4em]">
                     <span className="font-semibold">GCash:</span> 0916-456-8604
                   </p>
 
@@ -122,7 +126,7 @@ const GiftM = () => {
                     />
                   </div>
 
-                  <p className="text-moss text-[1.125em] text-center mb-[0.4em]">
+                  <p className="text-moss text-[0.9em] md:text-[1.125em] text-center mb-[0.4em]">
                     <span className="font-semibold">BDO:</span> 0008-8033-2077
                   </p>
 
@@ -138,7 +142,7 @@ const GiftM = () => {
 
                 <button
                   onClick={() => setShowModal(false)}
-                  className="bg-moss text-white font-georgia text-[1.2em] px-[1em] py-[0.4em] rounded-full hover:bg-moss/90 transition-all duration-300 mt-[0.6em]"
+                  className="bg-moss text-white font-georgia text-[1em] md:text-[1.2em] px-[1em] py-[0.4em] rounded-full hover:bg-moss/90 transition-all duration-300 mt-[0.6em]"
                 >
                   Close
                 </button>
