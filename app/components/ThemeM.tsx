@@ -4,7 +4,7 @@ import Image from 'next/image'
 const ThemeM = () => {
   return (
     <section className='min-h-[1px] pt-[6em] pb-[6em] relative flex flex-wrap box-border lg:hidden'>
-        <div className='w-[12em] h-[12em] top-[-0.5em] right-[-1.8em] absolute z-1 pointer-events-none box-border'>
+        <div className='w-[10em] md:w-[12em] h-[10em] md:h-[12em] top-[-0.5em] right-[0] absolute z-1 pointer-events-none box-border'>
             <Image 
                 alt=''
                 src={'/flowers/floater_5.png'}
