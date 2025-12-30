@@ -26,16 +26,16 @@ const Navbar = () => {
         </div>
         {/* NAV MENU */}
         <div className={`${toggleMenu? '': '-mr-[100vw]'} z-3 hidden lg:block size-full fixed top-0 right-0 m-0 bg-white/70 transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)]`}>
-          <ul className={`${toggleMenu? 'mr-[5vw]': '-mr-[90vw] '} hidden lg:flex flex-col font-georgia relative gap-6 w-80 max-h-[60%] mt-[5vw] pb-[20vw] pt-[2vw] pl-[3vw] float-right bg-stain transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)]`}>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#home">Home</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#couple">The Couple</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#abays">Entourage</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#schedule">Timeline</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#theme">Wedding Attire</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#gallery">Our Story</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvp">RSVP</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#gift">Gift Guide</a></li>
-            <li><a className='text-3xl text-moss hover:text-amber-50' onClick={toggleNav} href="#faqs">FAQs</a></li>
+          <ul className={`${toggleMenu? 'mr-[5vw]': '-mr-[90vw] '} hidden lg:flex flex-col font-georgia relative gap-[0.6vw] w-[25%] max-h-[60%] mt-[5vw] pb-[20vw] pt-[2vw] pl-[1.8vw] float-right bg-stain transition-all duration-400 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)]`}>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#home">Home</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#couple">The Couple</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#abays">Entourage</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#schedule">Timeline</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#theme">Wedding Attire</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#gallery">Our Story</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#rsvp">RSVP</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#gift">Gift Guide</a></li>
+            <li><a className='text-[1.4vw] text-moss hover:text-amber-50' onClick={toggleNav} href="#faqs">FAQs</a></li>
           </ul>
         </div>
       {/* MOBILE MENU */}

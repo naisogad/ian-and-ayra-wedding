@@ -162,7 +162,7 @@ const TimelineItem = ({ time, title, description }) => (
     <motion.div 
         className="border-solid border-r-1 border-moss text-right grow-0 shrink-0 basis-[33%] max-w-[33%] pr-[1vw] pt-[1vw] box-border"
     >
-      <p className="text-moss leading-[1.7] text-[1vw]">{time}</p>
+      <p className="text-moss leading-[1] text-[0.8vw]">{time}</p>
     </motion.div>
 
     {/* DETAILS */}
@@ -174,8 +174,8 @@ const TimelineItem = ({ time, title, description }) => (
         className="grow-0 shrink-0 basis-[58%] max-w-[58%] p-[1vw] mb-[1vw] ml-[1vw] bg-amber-50 box-border"
     >
       <div className="text-moss">
-        <p className="text-[1.4vw] leading-[1.8]">{title}</p>
-        <p className="leading-[1.4] text-[1vw]">{description}</p>
+        <p className="text-[1vw] leading-[1.8]">{title}</p>
+        <p className="leading-[1.2] text-[0.8vw]">{description}</p>
       </div>
     </motion.div>
   </>
@@ -304,7 +304,7 @@ const TimelineItem = ({ time, title, description }) => (
                         initial="hidden"
                         animate="visible"
                         exit="exit"
-                        className="basis-[58%] min-h-[40vw] relative"
+                        className="basis-[58%] min-h-[20vw] relative"
                     >
                         <Image
                             alt=""
@@ -336,7 +336,7 @@ const TimelineItem = ({ time, title, description }) => (
                             initial="hidden"
                             animate="visible"
                             exit="exit"
-                            className="text-[1.6vw] mb-[1vw] leading-[1.5] overflow-hidden text-ellipsis relative z-2 font-georgia"
+                            className="text-[1.3vw] mb-[1vw] leading-[1.5] overflow-hidden text-ellipsis relative z-2 font-georgia"
                         >
                             GP Suites
                         </motion.h3>
